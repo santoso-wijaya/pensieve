@@ -14,16 +14,7 @@ RUN <<EOF
     build-essential \
     zlib1g-dev \
     wget \
-    gpg \
     xz-utils
-EOF
-
-# Install developer tools to make this container suitable as a devcontainer in
-# GitHub Codespaces.
-RUN <<EOF
-  apt-get install -qy --no-install-recommends \
-    git \
-    vim
 EOF
 
 # Clean up
