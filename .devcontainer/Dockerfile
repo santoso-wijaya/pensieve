@@ -16,7 +16,6 @@ RUN <<EOF
     wget \
     gpg \
     xz-utils
-  apt-get clean
 EOF
 
 # Use the bash shell with -l (login) from here on.
@@ -35,6 +34,17 @@ RUN <<EOF
   ruby -v
   gem install jekyll bundler
 EOF
+
+# Install developer tools to make this container suitable as a devcontainer in
+# GitHub Codespaces.
+RUN <<EOF
+  apt-get install -qy --no-install-recommends \
+    git \
+    vim
+EOF
+
+# Clean up
+RUN apt-get clean
 
 # If invoking Jekyll commands that touch files, mount them here.
 VOLUME /vol
