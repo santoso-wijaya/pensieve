@@ -36,4 +36,8 @@ RUN <<EOF
   gem install jekyll bundler
 EOF
 
+# If invoking Jekyll commands that touch files, mount them here.
+VOLUME /vol
+WORKDIR /vol
+
 ENTRYPOINT ["/bin/bash", "-l", "-c"]
