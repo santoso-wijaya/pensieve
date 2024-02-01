@@ -2,71 +2,38 @@
 FROM ubuntu:22.04
 LABEL org.opencontainers.image.authors="Santoso Wijaya <code@swijaya.com>"
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN <<EOF
-  apt-get update
-  apt-get install -y \
-    ruby-full \
+  apt-get update -q
+  apt-get install -qy --no-install-recommends \
+    procps \
+    curl \
+    ca-certificates \
+    gnupg2 \
     build-essential \
     zlib1g-dev \
     wget \
     gpg \
     xz-utils
-EOF
-
-# Use the bash shell from here on.
-SHELL ["/bin/bash", "-ec"]
-
-# Fetch and install ruby-install
-RUN <<EOF
-  wget https://github.com/postmodern/ruby-install/releases/download/v0.9.3/ruby-install-0.9.3.tar.gz
-  tar -xzvf ruby-install-0.9.3.tar.gz
-  pushd ruby-install-0.9.3
-  make install
-  popd
-EOF
-
-RUN <<EOF
-  ruby-install -V
-  ruby-install ruby 3.1.3
-EOF
-
-# Fetch and install chruby
-RUN <<EOF
-  wget https://github.com/postmodern/chruby/releases/download/v0.3.9/chruby-0.3.9.tar.gz
-  tar -xzvf chruby-0.3.9.tar.gz
-  pushd chruby-0.3.9
-  make install
-  popd
-EOF
-
-# Image cleanup
-RUN <<EOF
   apt-get clean
-  rm -rf ruby-install-0.9.3 ruby-install-0.9.3.tar.gz
-  rm -rf chruby-0.3.9 chruby-0.3.9.tar.gz
 EOF
 
-COPY <<EOF /etc/profile.d/chruby.sh
-[ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ] || return
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-3.1.3
-EOF
+# Use the bash shell with -l (login) from here on.
+# The login behavior is important to trigger RVM's setup scripts.
+SHELL [ "/bin/bash", "-l", "-c" ]
 
-# Something wrong here! When I execute `docker run ... bash` I still don't see 
-# chruby activate!
+# Fetch and install RVM
 RUN <<EOF
-  echo >> ~/.profile
-  echo 'source /usr/local/share/chruby/chruby.sh' >> ~/.profile
-  echo 'source /usr/local/share/chruby/auto.sh' >> ~/.profile
-  echo 'chruby ruby-3.1.3' >> ~/.profile
+  gpg2 --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+  curl -sSL https://get.rvm.io | bash -s
+  . /etc/profile.d/rvm.sh && rvm install 3.1.0
 EOF
 
 RUN <<EOF
-  exec /bin/bash
-  chruby
+  rvm -v
   ruby -v
-  gem install jekyll bundler
+  #gem install jekyll bundler
 EOF
 
-CMD ["irb"]
+ENTRYPOINT ["/bin/bash", "-l", "-c"]
