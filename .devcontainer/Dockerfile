@@ -7,6 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN <<EOF
   apt-get update -q
   apt-get install -qy --no-install-recommends \
+    git \
     procps \
     curl \
     ca-certificates \
