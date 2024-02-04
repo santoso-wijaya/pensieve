@@ -4,6 +4,7 @@
 
 layout: home
 permalink: /
+author_profile: true
 sidebar:
   nav: "surface"  # see: _data/navigation.yml:surface
 ---
