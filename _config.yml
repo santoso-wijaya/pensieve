@@ -67,6 +67,25 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/cygnoid9"
 
+# Archive Settings
+# See: https://mmistakes.github.io/minimal-mistakes/docs/configuration/#archive-settings
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy  # provided by Minimal Mistakes
+    tag: archive-taxonomy # see: _layouts folder in minimal-mistakes-jekyll gem
+  permalinks:
+    category: /categories/:name/ # e.g. pensieve.swijaya.com/categories/keebs/
+    tag: /tags/:name/
+
 defaults:
   # _posts
   - scope:
@@ -79,6 +98,18 @@ defaults:
       read_time: true # the default word/minute value is 200
       share: true
       related: true
+  # The following two "empty path" scopes apply FM defaults to jekyll-archives
+  # generated pages.
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
 
 collections_dir: collections
 collections:
