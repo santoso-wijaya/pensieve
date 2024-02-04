@@ -101,6 +101,7 @@ collections_dir: collections
 collections:
   posts:
     output: true
+    layout: single
     permalink: /:categories/:title
 
 # Exclude from processing.

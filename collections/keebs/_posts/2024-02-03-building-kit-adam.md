@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Building Kit Adam"
 tag: mechanical keyboard
 assets_base: "/assets/keebs/kit-adams"
