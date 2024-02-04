@@ -22,7 +22,8 @@ title: Santoso's Pensieve
 subtitle: "v0.1.0"
 email: code@swijaya.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A pensieve for my thoughts and ramblings.
+  A [pensieve](https://www.wizardingworld.com/fact-file/objects/pensieve#) for
+  my thoughts and ramblings.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pensieve.swijaya.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  santoso-wijaya
@@ -72,6 +73,7 @@ jekyll-archives:
     category: /categories/:name/ # e.g. pensieve.swijaya.com/categories/keebs/
     tag: /tags/:name/
 
+# Configure our Jekyll Collections structure.
 collections_dir: collections
 collections:
   # for /collections/<category>/<sub_category>/_posts/yyyy-mm-dd-title.md
@@ -85,7 +87,7 @@ collections:
     output: true
     permalink: /:collection/:path
 
-# Front Matter defaults
+# Front Matter Defaults.
 defaults:
   # _posts
   - scope:
@@ -100,10 +102,11 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
+      author_profile: true
   # The following two "empty path" scopes apply FM defaults to jekyll-archives
   # generated pages.
   - scope:
