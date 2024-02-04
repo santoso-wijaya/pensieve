@@ -132,3 +132,5 @@ defaults:
 include:
   - .htaccess
   - _pages
+exclude:
+  - README.md
