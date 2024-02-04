@@ -17,3 +17,13 @@ main:
   - title: "Collections"
     url: /collection-archive/
     Description: "A collection of curated posts."
+
+# Used in sidebar navigation.
+# To use, include the following in a Front Matter:
+# sidebar:
+#   navs: "surface"
+surface:
+  - title: Mechanical Keyboards
+    url: categories/keebs
+  - title: 日本語 # TODO
+    url: categories/nihongo

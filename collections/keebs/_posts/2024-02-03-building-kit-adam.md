@@ -4,6 +4,8 @@ tag: mechanical keyboard
 toc: true
 toc_icon: "keyboard"
 assets_base: "/assets/keebs/kit-adams"
+#header:
+  #image: /assets/keebs/kit-adams/done_header.jpeg # TODO
 ---
 
 I spent the day building Kit Adam today. 楽しかったよ。
