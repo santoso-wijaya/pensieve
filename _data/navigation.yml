@@ -1,0 +1,19 @@
+# Used in masthead navigation links in Minimal Mistakes theme.
+# See: https://mmistakes.github.io/minimal-mistakes/docs/navigation/#masthead
+main:
+  # TODO: fix the URLs below; none of them are working rn
+  - title: "Posts"
+    url: /year-archive/
+    description: "Blog posts from the current year."
+  - title: "Categories"
+    url: /categories/
+    description: "An archive of categorized posts."
+  - title: "Tags"
+    url: /tags/
+    description: "An archive of tagged posts."
+  - title: "Pages"
+    url: /page-archive/
+    Description: "An archive of all pages."
+  - title: "Collections"
+    url: /collection-archive/
+    Description: "A collection of curated posts."
