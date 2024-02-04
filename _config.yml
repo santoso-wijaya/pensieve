@@ -18,13 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Pensieve
+title: Santoso's Pensieve
+subtitle: "v0.1.0"
 email: code@swijaya.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A pensieve for my thoughts.
+  A pensieve for my thoughts and ramblings.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pensieve.swijaya.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  santoso-wijaya
+repository: "santoso-wijaya/pensieve"
+#logo: "/assets/images/logo/88x88.png" # Site masthead logo
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -34,11 +37,54 @@ plugins:
 
 minimal_mistakes_skin: "air"
 
+# For customizing minimal-mistakes theme features in this file, see:
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
+timezone: America/Los_Angeles
+
+author:
+  name: "Santoso Wijaya"
+  avatar: "/assets/images/avatar/bio-photo.jpg"
+  bio: "A software engineer with eclectic tastes."
+  location: "Irvine, CA"
+  links:
+    - label: "Pensieve"
+      icon: "fab fa-fw fa-code" # placeholder for now
+      url: "https://pensieve.swijaya.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/santoso-wijaya"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/cygnoid9"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/santoso-wijaya"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/cygnoid9"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values: # by default, set the following options in Front Matter of all posts
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true # the default word/minute value is 200
+      share: true
+      related: true
+
 collections_dir: collections
 collections:
   posts:
     output: true
-    permalink: /blog/:categories/:title
+    permalink: /:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
