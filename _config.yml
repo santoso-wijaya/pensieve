@@ -78,6 +78,7 @@ jekyll-archives:
     category: /categories/:name/ # e.g. pensieve.swijaya.com/categories/keebs/
     tag: /tags/:name/
 
+# Front Matter defaults
 defaults:
   # _posts
   - scope:
