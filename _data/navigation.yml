@@ -23,7 +23,7 @@ main:
 # sidebar:
 #   navs: "surface"
 surface:
-  - title: Mechanical Keyboards
-    url: /categories/keebs/
-  - title: 日本語 # TODO
+  - title: Keebs
+    url: /categories/keebs/ # TODO: replace with a Collection
+  - title: 日本語
     url: /nihongo/
