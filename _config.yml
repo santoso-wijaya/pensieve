@@ -32,6 +32,10 @@ plugins:
   - jekyll-feed
 
 collections_dir: collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
