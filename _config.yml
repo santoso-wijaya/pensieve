@@ -37,6 +37,12 @@ plugins:
 
 minimal_mistakes_skin: "air"
 
+collections_dir: collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title
+
 # For customizing minimal-mistakes theme features in this file, see:
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 
@@ -84,6 +90,12 @@ defaults:
       read_time: true # the default word/minute value is 200
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
   # The following two "empty path" scopes apply FM defaults to jekyll-archives
   # generated pages.
   - scope:
@@ -96,13 +108,6 @@ defaults:
       type: category
     values:
       comments: false
-
-collections_dir: collections
-collections:
-  posts:
-    output: true
-    layout: single
-    permalink: /:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.

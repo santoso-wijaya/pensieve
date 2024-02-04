@@ -1,6 +1,8 @@
 ---
 title:  "Building Kit Adam"
 tag: mechanical keyboard
+toc: true
+toc_icon: "keyboard"
 assets_base: "/assets/keebs/kit-adams"
 ---
 
