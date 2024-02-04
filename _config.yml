@@ -37,12 +37,6 @@ plugins:
 
 minimal_mistakes_skin: "air"
 
-collections_dir: collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:title
-
 # For customizing minimal-mistakes theme features in this file, see:
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 
@@ -78,6 +72,19 @@ jekyll-archives:
     category: /categories/:name/ # e.g. pensieve.swijaya.com/categories/keebs/
     tag: /tags/:name/
 
+collections_dir: collections
+collections:
+  # for /collections/<category>/<sub_category>/_posts/yyyy-mm-dd-title.md
+  posts:
+    output: true
+    permalink: /:categories/:title
+  # for /collections/nihongo/... collection of pages
+  nihongo:
+    # these say: output `index.html` files for each document in
+    # /collections/_nihongo/<document_filename>/
+    output: true
+    permalink: /:collection/:path
+
 # Front Matter defaults
 defaults:
   # _posts
@@ -109,6 +116,14 @@ defaults:
       type: category
     values:
       comments: false
+  # Collection defaults for _nihongo
+  - scope:
+      path: ""
+      type: nihongo
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 # Reading files
 include:

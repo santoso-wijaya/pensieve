@@ -24,6 +24,6 @@ main:
 #   navs: "surface"
 surface:
   - title: Mechanical Keyboards
-    url: categories/keebs
+    url: /categories/keebs/
   - title: 日本語 # TODO
-    url: categories/nihongo
+    url: /nihongo/
