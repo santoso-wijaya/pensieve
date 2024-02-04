@@ -27,9 +27,12 @@ url: "https://pensieve.swijaya.com" # the base hostname & protocol for your site
 github_username:  santoso-wijaya
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-include-cache # required for minimal-mistakes-jekyll!
+
+minimal_mistakes_skin: "air"
 
 collections_dir: collections
 collections:
