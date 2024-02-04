@@ -1,10 +1,10 @@
 # Used in masthead navigation links in Minimal Mistakes theme.
 # See: https://mmistakes.github.io/minimal-mistakes/docs/navigation/#masthead
 main:
-  # TODO: fix the URLs below; none of them are working rn
+  # TODO: fix the URLs below; none of them are working
   - title: "Posts"
-    url: /year-archive/
-    description: "Blog posts from the current year."
+    url: /year-archive/ # auto-generated with Front Matter magic; see: _pages/year-archive.md
+    description: "Blog posts grouped by publication year."
   - title: "Categories"
     url: /categories/
     description: "An archive of categorized posts."
