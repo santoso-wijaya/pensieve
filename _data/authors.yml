@@ -1,0 +1,17 @@
+# See: https://mmistakes.github.io/minimal-mistakes/docs/authors/
+
+Santoso Wijaya:
+  name      : "Santoso Wijaya"
+  avatar    : "/assets/images/avatar/bio-photo.jpg"
+  bio       : "A software engineer with eclectic tastes."
+  location  : "Irvine, CA"
+  links:
+    - label: "Pensieve"
+      icon: "fab fa-fw fa-code" # placeholder for now
+      url: "https://pensieve.swijaya.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/santoso-wijaya"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/cygnoid9"
