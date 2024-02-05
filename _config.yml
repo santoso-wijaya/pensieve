@@ -35,6 +35,7 @@ theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-include-cache # required for minimal-mistakes-jekyll!
+  - jekyll-responsive-image
 
 minimal_mistakes_skin: "air"
 
@@ -134,3 +135,23 @@ include:
   - _pages
 exclude:
   - README.md
+
+
+# jekyll-responsive-image configs
+responsive_image:
+  template: _includes/responsive-image.html
+  # Quality to use when resizing images.
+  default_quality: 80
+  sizes:
+    - width: 480
+    - width: 800
+      quality: 90
+    - width: 1400
+      quality: 90
+  # Don't save resized images to source.
+  save_to_source: false
+  # By default, only images referenced by the responsive_image and responsive_image_block
+  # tags are resized. Here you can set a list of paths or path globs to resize other
+  # images. This is useful for resizing images which will be referenced from stylesheets.
+  extra_images:
+    - assets/avatars/*.{jpeg,jpg}

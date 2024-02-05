@@ -7,15 +7,16 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN <<EOF
   apt-get update -q
   apt-get install -qy --no-install-recommends \
-    git \
-    procps \
-    curl \
-    ca-certificates \
-    gnupg2 \
     build-essential \
-    zlib1g-dev \
+    ca-certificates \
+    curl \
+    git \
+    gnupg2 \
+    libmagickcore-dev \
+    procps \
     wget \
-    xz-utils
+    xz-utils \
+    zlib1g-dev
 EOF
 
 # Clean up

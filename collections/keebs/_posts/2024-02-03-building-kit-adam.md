@@ -3,51 +3,89 @@ title:  "Building Kit Adam"
 tag: mechanical keyboard
 toc: true
 toc_icon: "keyboard"
-assets_base: "/assets/keebs/kit-adams"
 #header:
   #image: /assets/keebs/kit-adams/done_header.jpeg # TODO
 ---
 
 I spent the day building Kit Adam today. 楽しかったよ。
 
+{% assign assets_base = "assets/keebs/kit-adams/" %}
+
 #### Unboxing...
 
-![Unboxing Kit Adam]({{ page.assets_base }}/unboxing.jpeg)
+{% responsive_image_block %}
+  path: {{ assets_base | append: "unboxing.jpeg" }}
+  alt: "Unboxing Kit Adam"
+{% endresponsive_image_block %}
+
+{% comment %}
+  The above tag is provided by jekyll-responsive-image plugin.
+  It would generate an `<img srcset>` tag like this:
+  <img src="/assets/resized/unboxing-1400x1050.jpeg"
+       alt="Unboxing Kit Adam"
+       srcset="/assets/resized/unboxing-320x240.jpeg 320w,/assets/resized/unboxing-480x360.jpeg 480w,/assets/resized/unboxing-800x600.jpeg 800w,/assets/resized/unboxing-1400x1050.jpeg 1400w, /assets/keebs/kit-adams/unboxing.jpeg 5712w"
+  />
+{% endcomment %}
 
 #### The PCB
 
-![An ADAM/アダム PCB]({{ page.assets_base }}/pcb1.jpeg)
-![An ADAM/アダム PCB]({{ page.assets_base }}/pcb2.jpeg)
-![An ADAM/アダム PCB]({{ page.assets_base }}/pcb3.jpeg)
+{% assign alt = "An ADAM/アダム PCB" %}
+{% for i in (1..3) %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "pcb" | append: i | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
 
 #### *Stabby stabby*
 
-![Mounting stabilizers into plate]({{ page.assets_base }}/stabs1.jpeg)
-![Mounting stabilizers into plate]({{ page.assets_base }}/stabs2.jpeg)
-![Mounting stabilizers into plate]({{ page.assets_base }}/stabs3.jpeg)
+{% assign alt = "Mounting stabilizers into plate" %}
+{% for i in (1..3) %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "stabs" | append: i | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
 
 #### Switches
 
 The mounted switches clips the PCB-foam-plate sandwich together. I'm using
 Gateron Jupiter tactile brown switches here.
 
-![Gateron Jupiter brown switches]({{ page.assets_base }}/switches1.jpeg)
-![Gateron Jupiter brown switches]({{ page.assets_base }}/switches2.jpeg)
-![Gateron Jupiter brown switches]({{ page.assets_base }}/switches3.jpeg)
-![Gateron Jupiter brown switches]({{ page.assets_base }}/switches4.jpeg)
+{% assign alt = "Gateron Jupiter brown switches" %}
+{% for i in (1..4) %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "switches" | append: i | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
 
 Switches は完成だ！
-![Gateron Jupiter brown switches]({{ page.assets_base }}/switches5.jpeg)
+
+{% responsive_image_block %}
+  path: {{ assets_base | append: "switches5.jpeg" }}
+  alt: {{ alt }}
+{% endresponsive_image_block %}
 
 #### Casing
 
-![Casing]({{ page.assets_base }}/case1.jpeg)
-![Casing]({{ page.assets_base }}/case2.jpeg)
+{% assign alt = "Casing" %}
+{% for i in (1..2) %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "case" | append: i | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
 
 #### Paddings
 
-![Foam paddings]({{ page.assets_base }}/padding1.jpeg)
-![Foam paddings]({{ page.assets_base }}/padding2.jpeg)
+{% assign alt = "Foam paddings" %}
+{% for i in (1..2) %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "padding" | append: i | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
 
 #### Keycaps
 
@@ -55,19 +93,34 @@ Next: keycaps. I chose a Matcha themed set with *kana* sub legends.
 
 あとは keycaps の問題なんだ。「Matcha」のデサインを選んだ。
 
-![Matcha keycaps]({{ page.assets_base }}/keycaps1.jpeg)
-![Matcha keycaps]({{ page.assets_base }}/keycaps2.jpeg)
+{% assign alt = "Matcha keycaps" %}
+{% for i in (1..2) %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "keycaps" | append: i | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
 
 WERK!
 
-![Partially installed keycaps spelling "WERK"]({{ page.assets_base }}/keycaps_werk.jpeg)
+{% responsive_image_block %}
+  path: {{ assets_base | append: "keycaps_werk.jpeg" }}
+  alt: "Partially installed keycaps spelling WERK"
+{% endresponsive_image_block %}
 
 あいすキミを
 
-![Partially installed keycaps spelling "あいすきみを"]({{ page.assets_base }}/keycaps_aisu.jpeg)
+{% responsive_image_block %}
+  path: {{ assets_base | append: "keycaps_aisu.jpeg" }}
+  alt: "Partially installed keycaps spelling あいすきみを"
+{% endresponsive_image_block %}
 
 #### All done!
 
-![Finished keyboard]({{ page.assets_base }}/done1.jpeg)
-![Finished keyboard]({{ page.assets_base }}/done2.jpeg)
-![Finished keyboard hung on a pegboard]({{ page.assets_base }}/done_pegboard.jpeg)
+{% assign alt = "Finished keyboard" %}
+{% for suffix in [1, 2, "_pegboard"] %}
+  {% responsive_image_block %}
+    path: {{ assets_base | append: "done" | append: suffix | append: ".jpeg" }}
+    alt: {{ alt }}
+  {% endresponsive_image_block %}
+{% endfor %}
