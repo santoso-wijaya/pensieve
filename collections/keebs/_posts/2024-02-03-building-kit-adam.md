@@ -3,8 +3,6 @@ title:  "Building Kit Adam"
 tag: mechanical keyboard
 toc: true
 toc_icon: "keyboard"
-#header:
-  #image: /assets/keebs/kit-adams/done_header.jpeg # TODO
 ---
 
 I spent the day building Kit Adam today. 楽しかったよ。
@@ -21,10 +19,13 @@ I spent the day building Kit Adam today. 楽しかったよ。
 {% comment %}
   The above tag is provided by jekyll-responsive-image plugin.
   It would generate an `<img srcset>` tag like this:
+
   <img src="/assets/resized/unboxing-1400x1050.jpeg"
        alt="Unboxing Kit Adam"
        srcset="/assets/resized/unboxing-320x240.jpeg 320w,/assets/resized/unboxing-480x360.jpeg 480w,/assets/resized/unboxing-800x600.jpeg 800w,/assets/resized/unboxing-1400x1050.jpeg 1400w, /assets/keebs/kit-adams/unboxing.jpeg 5712w"
   />
+
+  See: /_includes/responsive-image.html and the .README.md file there.
 {% endcomment %}
 
 #### The PCB

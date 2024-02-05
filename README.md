@@ -1,3 +1,5 @@
+This is the source code behind http://pensieve.swijaya.com/.
+
 # Building Pensieve
 
 Powered by [Jekyll](https://jekyllrb.com/) with

@@ -131,9 +131,9 @@ defaults:
 
 # Reading files
 include:
-  - .htaccess
   - _pages
 exclude:
+  # Note: dotfiles are already excluded by default.
   - README.md
 
 
