@@ -36,3 +36,6 @@ pleasant to use, too!
 
 I kinda want to get deeper into its plugin than theming systems and/or get my
 hands cut on some Ruby.
+
+Source code here:
+[github.com/santoso-wijaya/pensieve](http://github.com/santoso-wijaya/pensieve).
