@@ -119,7 +119,8 @@ WERK!
 #### All done!
 
 {% assign alt = "Finished keyboard" %}
-{% for suffix in [1, 2, "_pegboard"] %}
+{% assign suffixes = "1 2 _pegboard" | split: " " %}
+{% for suffix in suffixes %}
   {% responsive_image_block %}
     path: {{ assets_base | append: "done" | append: suffix | append: ".jpeg" }}
     alt: {{ alt }}

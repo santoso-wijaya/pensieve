@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pensieve.swijaya.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  santoso-wijaya
 repository: "santoso-wijaya/pensieve"
-#logo: "/assets/images/logo/88x88.png" # Site masthead logo
+#logo: "/assets/logo/pensieve-88x88.png" # Site masthead logo
 
 # Build settings
 theme: minimal-mistakes-jekyll
