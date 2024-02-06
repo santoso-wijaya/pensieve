@@ -1,8 +1,110 @@
 ---
-title:  "Building Kit Adam"
-tag: mechanical keyboard
-toc: true
-toc_icon: "keyboard"
+title     :  "Building Kit Adam"
+tag       : mechanical keyboard
+toc       : true
+toc_icon  : "keyboard"
+
+gallery-pcb:
+  - url           : /assets/keebs/kit-adams/pcb1.jpeg
+    image_path    : /assets/keebs/kit-adams/pcb1.jpeg
+    alt           : &pcb "An ADAM/アダム PCB"
+    title         : *pcb
+  - url           : /assets/keebs/kit-adams/pcb2.jpeg
+    image_path    : /assets/keebs/kit-adams/pcb2.jpeg
+    alt           : &pcb
+    title         : *pcb
+  - url           : /assets/keebs/kit-adams/pcb3.jpeg
+    image_path    : /assets/keebs/kit-adams/pcb3.jpeg
+    alt           : &pcb
+    title         : *pcb
+
+gallery-stabs:
+  - url           : /assets/keebs/kit-adams/stabs1.jpeg
+    image_path    : /assets/keebs/kit-adams/stabs1.jpeg
+    alt           : &stabs "Stabilizers mounted into the plate"
+    title         : *stabs
+  - url           : /assets/keebs/kit-adams/stabs2.jpeg
+    image_path    : /assets/keebs/kit-adams/stabs2.jpeg
+    alt           : *stabs
+    title         : *stabs
+  - url           : /assets/keebs/kit-adams/stabs3.jpeg
+    image_path    : /assets/keebs/kit-adams/stabs3.jpeg
+    alt           : *stabs
+    title         : *stabs
+
+gallery-switches:
+  - url           : /assets/keebs/kit-adams/switches1.jpeg
+    image_path    : /assets/keebs/kit-adams/switches1.jpeg
+    alt           : &switches "Gateron Jupiter brown tactile switches"
+    title         : *switches
+  - url           : /assets/keebs/kit-adams/switches2.jpeg
+    image_path    : /assets/keebs/kit-adams/switches2.jpeg
+    alt           : *switches
+    title         : *switches
+  - url           : /assets/keebs/kit-adams/switches3.jpeg
+    image_path    : /assets/keebs/kit-adams/switches3.jpeg
+    alt           : *switches
+    title         : *switches
+  - url           : /assets/keebs/kit-adams/switches4.jpeg
+    image_path    : /assets/keebs/kit-adams/switches4.jpeg
+    alt           : *switches
+    title         : *switches
+  - url           : /assets/keebs/kit-adams/switches5.jpeg
+    image_path    : /assets/keebs/kit-adams/switches5.jpeg
+    alt           : *switches
+    title         : *switches
+
+gallery-case:
+  - url           : /assets/keebs/kit-adams/case1.jpeg
+    image_path    : /assets/keebs/kit-adams/case1.jpeg
+    alt           : &case "Building the lego-like casing"
+    title         : *case
+  - url           : /assets/keebs/kit-adams/case2.jpeg
+    image_path    : /assets/keebs/kit-adams/case2.jpeg
+    alt           : *case
+    title         : *case
+
+gallery-padding:
+  - url           : /assets/keebs/kit-adams/padding1.jpeg
+    image_path    : /assets/keebs/kit-adams/padding1.jpeg
+    alt           : &padding "Foam paddings"
+    title         : *padding
+  - url           : /assets/keebs/kit-adams/padding2.jpeg
+    image_path    : /assets/keebs/kit-adams/padding2.jpeg
+    alt           : *padding
+    title         : *padding
+
+gallery-keycaps:
+  - url           : /assets/keebs/kit-adams/keycaps1.jpeg
+    image_path    : /assets/keebs/kit-adams/keycaps1.jpeg
+    alt           : &keycaps "Matcha keycaps"
+    title         : *keycaps
+  - url           : /assets/keebs/kit-adams/keycaps2.jpeg
+    image_path    : /assets/keebs/kit-adams/keycaps2.jpeg
+    alt           : &keycaps "Matcha keycaps"
+    title         : *keycaps
+  - url           : /assets/keebs/kit-adams/keycaps_werk.jpeg
+    image_path    : /assets/keebs/kit-adams/keycaps_werk.jpeg
+    alt           : "Partially installed keycaps spelling WERK"
+    title         : "WERK!"
+  - url           : /assets/keebs/kit-adams/keycaps_aisu.jpeg
+    image_path    : /assets/keebs/kit-adams/keycaps_aisu.jpeg
+    alt           : "Partially installed keycaps spelling あいすきみを"
+    title         : "あいすキミを"
+
+gallery-done:
+  - url           : /assets/keebs/kit-adams/done1.jpeg
+    image_path    : /assets/keebs/kit-adams/done1.jpeg
+    alt           : &done "Finished keyboard"
+    title         : *done
+  - url           : /assets/keebs/kit-adams/done_pegboard.jpeg
+    image_path    : /assets/keebs/kit-adams/done_pegboard.jpeg
+    alt           : &pegboard "Finished keyboard mounted on pegboard"
+    title         : *pegboard
+  - url           : /assets/keebs/kit-adams/done2.jpeg
+    image_path    : /assets/keebs/kit-adams/done2.jpeg
+    alt           : *done
+    title         : *done
 ---
 
 I spent the day building Kit Adam today. 楽しかったよ。
@@ -30,99 +132,41 @@ I spent the day building Kit Adam today. 楽しかったよ。
 
 #### The PCB
 
-{% assign alt = "An ADAM/アダム PCB" %}
-{% for i in (1..3) %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "pcb" | append: i | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
+{% include gallery id="gallery-pcb" class="full" caption="The アダム PCB." %}
+
+{% comment %}
+  See: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+{% endcomment %}
 
 #### *Stabby stabby*
 
-{% assign alt = "Mounting stabilizers into plate" %}
-{% for i in (1..3) %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "stabs" | append: i | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
+{% include gallery id="gallery-stabs" class="full"
+                   caption="These stabilizers came pre-lubed. Nice!" %}
 
 #### Switches
 
 The mounted switches clips the PCB-foam-plate sandwich together. I'm using
 Gateron Jupiter tactile brown switches here.
 
-{% assign alt = "Gateron Jupiter brown switches" %}
-{% for i in (1..4) %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "switches" | append: i | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
-
-Switches は完成だ！
-
-{% responsive_image_block %}
-  path: {{ assets_base | append: "switches5.jpeg" }}
-  alt: {{ alt }}
-{% endresponsive_image_block %}
+{% include gallery id="gallery-switches" class="full"
+                   caption="Switches は完成だ！" %}
 
 #### Casing
 
-{% assign alt = "Casing" %}
-{% for i in (1..2) %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "case" | append: i | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
+{% include gallery id="gallery-case" class="full" %}
 
 #### Paddings
 
-{% assign alt = "Foam paddings" %}
-{% for i in (1..2) %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "padding" | append: i | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
+{% include gallery id="gallery-padding" class="full" %}
 
 #### Keycaps
 
 Next: keycaps. I chose a Matcha themed set with *kana* sub legends.
 
+{% include gallery id="gallery-keycaps" class="full" %}
+
 あとは keycaps の問題なんだ。「Matcha」のデサインを選んだ。
-
-{% assign alt = "Matcha keycaps" %}
-{% for i in (1..2) %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "keycaps" | append: i | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
-
-WERK!
-
-{% responsive_image_block %}
-  path: {{ assets_base | append: "keycaps_werk.jpeg" }}
-  alt: "Partially installed keycaps spelling WERK"
-{% endresponsive_image_block %}
-
-あいすキミを
-
-{% responsive_image_block %}
-  path: {{ assets_base | append: "keycaps_aisu.jpeg" }}
-  alt: "Partially installed keycaps spelling あいすきみを"
-{% endresponsive_image_block %}
 
 #### All done!
 
-{% assign alt = "Finished keyboard" %}
-{% assign suffixes = "1 2 _pegboard" | split: " " %}
-{% for suffix in suffixes %}
-  {% responsive_image_block %}
-    path: {{ assets_base | append: "done" | append: suffix | append: ".jpeg" }}
-    alt: {{ alt }}
-  {% endresponsive_image_block %}
-{% endfor %}
+{% include gallery id="gallery-done" class="full" %}
