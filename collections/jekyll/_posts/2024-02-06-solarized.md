@@ -1,6 +1,6 @@
 ---
 title:  "Solarized"
-tags: colorscheme jekyll
+tag: color scheme
 ---
 
 I love the [Solarized](https://ethanschoonover.com/solarized/) color scheme. I
@@ -50,7 +50,7 @@ Here's what I did to make this happen.
     /*--- theme customizations ---*/
     // ... (color setup with solarized naming scheme)
 
-    /* NOTE: minimal-mistakes uses roughly the following color naming scheme for
+    /* NOTE: minimal-mistakes uses roughly the following color assignments for
     *       syntax highlighting in code blocks:
     *       (see: _sass/minimal-mistakes/_syntax.scss)
     * $base00: (highlight background)
