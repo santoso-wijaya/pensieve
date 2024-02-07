@@ -110,7 +110,7 @@ in Minimal Mistakes' documentation.
     mapping Solarized color names to their hex values and TERMCOL names.
 *   [Styling Guidelines](https://github.com/chriskempson/base16/blob/main/styling.md#styling-guidelines)
     for typical uses of colors 0-16.
-*   [`minimal-mistakes/_sass/minimal-mistakes/_syntax.css](https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_sass/minimal-mistakes/_syntax.scss)
+*   [`minimal-mistakes/_sass/minimal-mistakes/_syntax.css`](https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_sass/minimal-mistakes/_syntax.scss)
 
 {% responsive_image_block %}
   path: "assets/solarized/colorscheme.png"
