@@ -16,7 +16,8 @@
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
         "Shopify.ruby-lsp",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "sibiraj-s.vscode-scss-formatter"
       ]
     }
   },
