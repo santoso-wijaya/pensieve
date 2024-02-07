@@ -48,24 +48,51 @@ Here's what I did to make this happen.
     @charset "utf-8";
 
     /*--- theme customizations ---*/
-    /* solarized light syntax highlighting (base16) */
-                                // solarized; TERMCOL
-    $base00: #fdf6e3 !default;  // base3; brwhite
-    $base01: #073642 !default;  // base02; black
-    $base02: #586e75 !default;  // base01; brgreen
-    $base03: #657b83 !default;  // base00; bryellow
-    $base04: #839496 !default;  // base0; brblue
-    $base05: #586e75 !default;  // base01; brgreen
-    $base06: #eee8d5 !default;  // base2; white
-    $base07: #fdf6e3 !default;  // base3; brwhite
-    $base08: #dc322f !default;  // red
-    $base09: #cb4b16 !default;  // orange
-    $base0a: #b58900 !default;  // yellow
-    $base0b: #859900 !default;  // green
-    $base0c: #2aa198 !default;  // cyan
-    $base0d: #268bd2 !default;  // blue
-    $base0e: #6c71c4 !default;  // violet
-    $base0f: #d33682 !default;  // red
+    // ... (color setup with solarized naming scheme)
+
+    /* NOTE: minimal-mistakes uses roughly the following color naming scheme for
+    *       syntax highlighting in code blocks:
+    *       (see: _sass/minimal-mistakes/_syntax.scss)
+    * $base00: (highlight background)
+    * $base01: (unused)
+    * $base02: (unused)
+    * $base03: (unused)
+    * $base04: comment, doc, (line numbers)
+    * $base05: name, punctuation, builtin, entity, label, property, (highlight)
+    * $base06: background
+    * $base07: (unused)
+    * $base08: error, exception, generic, constant, variable
+    * $base09: literal, number
+    * $base0a: type, class, namespace
+    * $base0b: date, string, regex, symbol
+    * $base0c: operator, namespace, decorator, tag
+    * $base0d: attribute, function
+    * $base0e: keyword
+    * $base0f: (unused)
+    */
+
+    // ----------------------------------------------------------------------------
+
+    // Considering all that, the Minimal Mistakes color scheme for
+    // DARK solarized is:
+    $base00: $-base02   !default; // background highlights
+    $base01: $-base2    !default; // -
+    $base02: $-base1    !default; // optional emphasized content
+    $base03: $-base0    !default; // primary content
+    $base04: $-base01   !default; // comments / secondary content
+    $base05: $-base1    !default; // optional emphasized content
+    $base06: $-base03   !default; // background
+    $base07: $-base02   !default; // background highlights
+    $base08: $-red      !default;
+    $base09: $-orange   !default;
+    $base0a: $-yellow   !default;
+    $base0b: $-green    !default;
+    $base0c: $-cyan     !default;
+    $base0d: $-blue     !default;
+    $base0e: $-violet   !default;
+    $base0f: $-magenta  !default;
+    // Note: To switch to LIGHT mode, all we need to do is to flip the $-baseXX
+    //       leading zeroes.
     /*--- end theme customizations ---*/
 
     @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -73,7 +100,7 @@ Here's what I did to make this happen.
     ```
 
     The full file:
-    [`pensieve/assets/css/main.scss`](https://github.com/santoso-wijaya/pensieve/assets/css/main.scss).
+    [`pensieve/assets/css/_solarized.scss`](https://github.com/santoso-wijaya/pensieve/assets/css/_solarized.scss).
 
 ## Research notes
 

@@ -4,46 +4,7 @@
 @charset "utf-8";
 
 /*--- theme customizations ---*/
-
-/* NOTE: minimal-mistakes-jekyll uses roughly the following color naming scheme:
- *       (see: _sass/minimal-mistakes/_syntax.scss)
- * $base00: (highlight background)
- * $base01: (unused)
- * $base02: (unused)
- * $base03: (unused)
- * $base04: comment, doc, (line numbers)
- * $base05: name, punctuation, builtin, entity, label, property, (highlight)
- * $base06: background
- * $base07: (unused)
- * $base08: error, exception, generic, constant, variable
- * $base09: literal, number
- * $base0a: type, class, namespace
- * $base0b: date, string, regex, symbol
- * $base0c: operator, namespace, decorator, tag
- * $base0d: attribute, function
- * $base0e: keyword
- * $base0f: (unused)
- */
-
-/* solarized light syntax highlighting (base16) */
-// See: L*a*b values (https://github.com/altercation/solarized/tree/master/vim-colors-solarized#the-values)
-                              // solarized; TERMCOL
-$base00: #fdf6e3 !default;  // base3; brwhite
-$base01: #073642 !default;  // base02; black
-$base02: #586e75 !default;  // base01; brgreen
-$base03: #657b83 !default;  // base00; bryellow
-$base04: #839496 !default;  // base0; brblue
-$base05: #586e75 !default;  // base01; brgreen
-$base06: #eee8d5 !default;  // base2; white
-$base07: #fdf6e3 !default;  // base3; brwhite
-$base08: #dc322f !default;  // red
-$base09: #cb4b16 !default;  // orange
-$base0a: #b58900 !default;  // yellow
-$base0b: #859900 !default;  // green
-$base0c: #2aa198 !default;  // cyan
-$base0d: #268bd2 !default;  // blue
-$base0e: #6c71c4 !default;  // violet
-$base0f: #d33682 !default;  // red
+@use "solarized";
 /*--- end theme customizations ---*/
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
