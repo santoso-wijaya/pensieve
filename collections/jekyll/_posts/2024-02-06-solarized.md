@@ -112,6 +112,9 @@ in Minimal Mistakes' documentation.
     for typical uses of colors 0-16.
 *   [`minimal-mistakes/_sass/minimal-mistakes/_syntax.css](https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_sass/minimal-mistakes/_syntax.scss)
 
-TODO: insert color chart here
+{% responsive_image_block %}
+  path: "assets/solarized/colorscheme.png"
+  alt: "Solarized color scheme chart"
+{% endresponsive_image_block %}
 
 Next up in my Jekyll theme customization journey: fonts.
