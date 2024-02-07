@@ -3,8 +3,8 @@ title:  "Solarized"
 tag: color scheme
 ---
 
-I love the [Solarized](https://ethanschoonover.com/solarized/) color scheme. I
-use it everywhere I code.
+I love [Solarized](https://ethanschoonover.com/solarized/) color scheme. I use
+it everywhere I code.
 
 Today, I wanted to customize the blog engine powering this Pensieve to also
 apply a Solarized color scheme when syntax highlighting a code block.
@@ -100,7 +100,7 @@ Here's what I did to make this happen.
     ```
 
     The full file:
-    [`pensieve/assets/css/_solarized.scss`](https://github.com/santoso-wijaya/pensieve/assets/css/_solarized.scss).
+    [`pensieve/assets/css/_solarized.scss`](https://github.com/santoso-wijaya/pensieve/blob/ff0be3be6a0930c5dacbac86d69980533bec201a/assets/css/_solarized.scss).
 
 ## Research notes
 
