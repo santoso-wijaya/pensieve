@@ -7,7 +7,7 @@ Santoso Wijaya:
   location  : "Irvine, CA"
   links:
     - label: "Pensieve"
-      icon: "fab fa-fw fa-code" # placeholder for now
+      icon: "fa fa-fw fa-link"
       url: "https://pensieve.swijaya.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
