@@ -75,22 +75,22 @@ Here's what I did to make this happen.
 
     // Considering all that, the Minimal Mistakes color scheme for
     // DARK solarized is:
-    $base00: $-base02   !default; // background highlights
-    $base01: $-base2    !default; // -
-    $base02: $-base1    !default; // optional emphasized content
-    $base03: $-base0    !default; // primary content
-    $base04: $-base01   !default; // comments / secondary content
-    $base05: $-base1    !default; // optional emphasized content
-    $base06: $-base03   !default; // background
-    $base07: $-base02   !default; // background highlights
-    $base08: $-red      !default;
-    $base09: $-orange   !default;
-    $base0a: $-yellow   !default;
-    $base0b: $-green    !default;
-    $base0c: $-cyan     !default;
-    $base0d: $-blue     !default;
-    $base0e: $-violet   !default;
-    $base0f: $-magenta  !default;
+    $base00: $-base02;  // background highlights
+    $base01: $-base2;   // -
+    $base02: $-base1;   // optional emphasized content
+    $base03: $-base0;   // primary content
+    $base04: $-base01;  // comments / secondary content
+    $base05: $-base1;   // optional emphasized content
+    $base06: $-base03;  // background
+    $base07: $-base02;  // background highlights
+    $base08: $-red;
+    $base09: $-orange;
+    $base0a: $-yellow;
+    $base0b: $-green;
+    $base0c: $-cyan;
+    $base0d: $-blue;
+    $base0e: $-violet;
+    $base0f: $-magenta;
     // Note: To switch to LIGHT mode, all we need to do is to flip the $-baseXX
     //       leading zeroes.
     /*--- end theme customizations ---*/
@@ -116,5 +116,3 @@ in Minimal Mistakes' documentation.
   path: "assets/solarized/colorscheme.png"
   alt: "Solarized color scheme chart"
 {% endresponsive_image_block %}
-
-Next up in my Jekyll theme customization journey: fonts.
