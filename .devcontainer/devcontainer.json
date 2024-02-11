@@ -4,6 +4,16 @@
     "dockerfile": "Dockerfile"
   },
   "customizations": {
+    "codespaces": {
+      "repositories": {
+        "santoso-wijaya/pensieve": {
+          "permissions": "write-all"
+        },
+        "santoso-wijaya/jekyll-badges": {
+          "permissions": "write-all"
+        }
+      }
+    },
     "vscode": {
       "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",
