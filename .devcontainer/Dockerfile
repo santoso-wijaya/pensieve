@@ -26,11 +26,11 @@ RUN apt-get clean
 # The login behavior is important to trigger RVM's setup scripts.
 SHELL [ "/bin/bash", "-l", "-c" ]
 
-# Fetch and install RVM, then use it to install Ruby 3.1.3
+# Fetch and install RVM, then use it to install Ruby 3.2.3
 RUN <<EOF
   gpg2 --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
   curl -sSL https://get.rvm.io | bash -s
-  . /etc/profile.d/rvm.sh && rvm install 3.1.3
+  . /etc/profile.d/rvm.sh && rvm install 3.2.3
 EOF
 
 RUN <<EOF
