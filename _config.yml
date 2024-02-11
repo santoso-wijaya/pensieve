@@ -156,3 +156,7 @@ responsive_image:
   # images. This is useful for resizing images which will be referenced from stylesheets.
   extra_images:
     - assets/avatars/*.{jpeg,jpg}
+
+
+# jekyll-badges configs
+disable_in_development: false
