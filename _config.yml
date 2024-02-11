@@ -159,4 +159,5 @@ responsive_image:
 
 
 # jekyll-badges configs
-disable_in_development: false
+badges:
+  disable_in_development: false
