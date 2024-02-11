@@ -161,3 +161,4 @@ responsive_image:
 # jekyll-badges configs
 badges:
   disable_in_development: false
+  template: _includes/badges.html
