@@ -33,6 +33,7 @@ repository: "santoso-wijaya/pensieve"
 # Build settings
 theme: minimal-mistakes-jekyll
 plugins:
+  - jekyll-badges
   - jekyll-feed
   - jekyll-include-cache # required for minimal-mistakes-jekyll!
   - jekyll-responsive-image
