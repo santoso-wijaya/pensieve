@@ -19,6 +19,7 @@ gem "rmagick" # requires `apt-get install libmagickcore-dev`
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-archives"
+  gem "jekyll-badges", :path => "/workspaces/jekyll-badges"
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-include-cache"
   gem "jekyll-responsive-image"
