@@ -113,7 +113,6 @@ DEPENDENCIES
   jekyll (~> 4.3.3)
   jekyll-archives
   jekyll-badges!
-  jekyll-badges!
   jekyll-feed (~> 0.12)
   jekyll-include-cache
   jekyll-responsive-image
