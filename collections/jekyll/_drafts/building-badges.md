@@ -5,4 +5,4 @@ tags: jekyll plugin liquid
 
 # This is a badge test
 
-{% badges %}
+{% render_badges %}
