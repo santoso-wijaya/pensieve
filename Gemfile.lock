@@ -1,14 +1,13 @@
-PATH
-  remote: /workspaces/jekyll-badges
+GIT
+  remote: https://github.com/santoso-wijaya/jekyll-badges.git
+  revision: 15fc8cc36edd4d9b10e044b8b30d9e2ce7e28af2
   specs:
     jekyll-badges (0.0.0)
       jekyll (>= 3.7, < 5.0)
-      rbs (~> 3.2)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    abbrev (0.1.2)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
@@ -88,8 +87,6 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rbs (3.4.4)
-      abbrev
     rexml (3.2.6)
     rmagick (4.3.0)
     rouge (4.2.0)
