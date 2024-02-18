@@ -1,5 +1,6 @@
-PATH
-  remote: /workspaces/jekyll-badges
+GIT
+  remote: https://github.com/santoso-wijaya/jekyll-badges.git
+  revision: 15fc8cc36edd4d9b10e044b8b30d9e2ce7e28af2
   specs:
     jekyll-badges (0.0.0)
       jekyll (>= 3.7, < 5.0)

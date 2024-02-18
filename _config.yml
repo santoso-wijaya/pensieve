@@ -20,12 +20,12 @@
 
 title: Santoso's Pensieve
 subtitle: "v0.1.0"
-email: code@swijaya.com
+email: code@swijaya.me
 description: >- # this means to ignore newlines until "baseurl:"
   A [pensieve](https://www.wizardingworld.com/fact-file/objects/pensieve#) for
   my thoughts and ramblings.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pensieve.swijaya.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pensieve.swijaya.me" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  santoso-wijaya
 repository: "santoso-wijaya/pensieve"
 #logo: "/assets/logo/pensieve-88x88.png" # Site masthead logo
@@ -72,7 +72,7 @@ jekyll-archives:
     category: archive-taxonomy  # provided by Minimal Mistakes
     tag: archive-taxonomy # see: _layouts folder in minimal-mistakes-jekyll gem
   permalinks:
-    category: /categories/:name/ # e.g. pensieve.swijaya.com/categories/keebs/
+    category: /categories/:name/ # e.g. pensieve.swijaya.me/categories/keebs/
     tag: /tags/:name/
 
 # Configure our Jekyll Collections structure.
@@ -162,3 +162,4 @@ responsive_image:
 badges:
   disable_in_development: false
   template: _includes/badges.html
+
