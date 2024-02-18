@@ -1,5 +1,5 @@
 ---
-title     :  "Building Kit Adam"
+title     :  "NuPhy Gem80"
 tag       : mechanical keyboard
 toc       : true
 toc_icon  : "keyboard"
