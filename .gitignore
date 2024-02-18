@@ -1,7 +1,19 @@
+# Jekyll generated files
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+
+# Mac OS
+*.DS_Store
+
+# [n]vim
+*~
+*.sw[p_]
+
+# Ruby Gem
+*.gem
+.bundle
+Gemfile.lock
 vendor
 
-*.DS_Store
