@@ -14,7 +14,7 @@
   "author": "Santoso Wijaya",
   "homepage": "https://pensieve.swijaya.me",
   "engines": {
-    "node": ">=20.11"
+    "node": ">=20.11.1"
   },
   "dependencies": {
     "@material/web": "^1.2.0"
@@ -24,7 +24,7 @@
     "rollup": "^4.12.0"
   },
   "scripts": {
-    "rollup": "rollup -p @rollup/plugin-node-resolve assets/js/_material.js -o assets/js/material_bundle.js",
+    "rollup": "rollup -p @rollup/plugin-node-resolve assets/js/_material.js -o _site/assets/js/material.rollup.js",
     "build:js": "npm run rollup"
   }
 }

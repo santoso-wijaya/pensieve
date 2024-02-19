@@ -23,6 +23,13 @@ EOF
 # Clean up
 RUN apt-get clean
 
+RUN <<EOF
+  node -v
+  npm install -g n
+  n lts
+EOF
+RUN node -v
+
 # Use the bash shell with -l (login) from here on.
 # The login behavior is important to trigger RVM's setup scripts.
 SHELL [ "/bin/bash", "-l", "-c" ]
