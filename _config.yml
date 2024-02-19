@@ -40,6 +40,9 @@ plugins:
 
 minimal_mistakes_skin: "air"
 
+head_scripts:
+  - /assets/js/material_bundle.js
+
 # For customizing minimal-mistakes theme features in this file, see:
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 

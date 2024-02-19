@@ -1,0 +1,30 @@
+{
+  "name": "pensieve",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Santoso's pensieve, powered by Jekyll.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santoso-wijaya/pensieve.git"
+  },
+  "keywords": [
+    "jekyll",
+    "blog"
+  ],
+  "author": "Santoso Wijaya",
+  "homepage": "https://pensieve.swijaya.me",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "dependencies": {
+    "@material/web": "^1.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.12.0"
+  },
+  "scripts": {
+    "rollup": "rollup -p @rollup/plugin-node-resolve assets/js/_material.js -o assets/js/material_bundle.js",
+    "build:js": "npm run rollup"
+  }
+}
