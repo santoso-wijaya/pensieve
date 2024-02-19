@@ -24,7 +24,7 @@
     "rollup": "^4.12.0"
   },
   "scripts": {
-    "rollup": "rollup -p @rollup/plugin-node-resolve assets/js/_material.js -o _site/assets/js/material.rollup.js",
+    "rollup": "rollup -p @rollup/plugin-node-resolve assets/js/_material.js -o assets/js/material.rollup.js",
     "build:js": "npm run rollup"
   }
 }
