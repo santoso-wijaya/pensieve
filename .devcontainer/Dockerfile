@@ -13,6 +13,7 @@ RUN <<EOF
     git \
     gnupg2 \
     libmagickcore-dev \
+    npm \
     procps \
     wget \
     xz-utils \
@@ -36,7 +37,7 @@ EOF
 RUN <<EOF
   rvm list
   ruby -v
-  gem install jekyll bundler
+  gem install bundler
 EOF
 
 # If invoking Jekyll commands that touch files, mount them here.
