@@ -64,7 +64,7 @@ for both NeoVim and Vim.
 Its content, at the moment (I'm currently in the middle of trying out three
 new plugins: `vim-commentary`, `vim-easymotion`, and `vim-sneak`):
 
-```
+{% highlight viml %}
 " Installing vim-plug:
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -78,6 +78,8 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 " Binds 'gc' to toggle comments in visual mode
 Plug 'tpope/vim-commentary'
+" Syntax highlighting for Liquid tempaltes
+Plug 'tpope/vim-liquid'
 " Binds some nifty, flighty navigation modes across a f ile
 Plug 'easymotion/vim-easymotion'
 " Any valid git URL is allowed
@@ -129,7 +131,7 @@ set swapfile
 set directory=.swp/,~/.swp/,/tmp//
 set backupdir=.backup/,~/.backup/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
-```
+{% endhighlight %}
 
 # (Neo)?Vim Tricks
 
