@@ -1,7 +1,12 @@
 ---
-title : Exploring NeoVim
+title : "Exploring NeoVim"
 tags  : vim nvim terminal editor
 ---
+
+{% responsive_image_block %}
+  path: assets/vim/nvim.png
+  alt: "NeoVim in Terminal"
+{% endresponsive_image_block %}
 
 I have been using vim and various IDEs with vim-like bindings for a good long
 while now, ever since college.
@@ -41,11 +46,11 @@ NeoVim canonically reads its vimrc file from `~/.config/nvim/init.vim` (or
 `.lua`) and `~/.config/nvim/`, respectively.
 
 I want to keep things as compatible between the two, for now. In case I decide
-later to return to Vim--if I find myself in a system without the facilities
+later to return to Vim--or if I find myself in a system without the facilities
 for NeoVim--I want most of what I use to customize NeoVim to also apply to Vim.
 
 More to the point: I want my Vim and NeoVim installations to share the same
-config file and plugin directory.
+config file.
 
 ```sh
 $ mkdir ~/.vim/
@@ -59,7 +64,7 @@ for both NeoVim and Vim.
 Its content, at the moment (I'm currently in the middle of trying out three
 new plugins: `vim-commentary`, `vim-easymotion`, and `vim-sneak`):
 
-```vimrc
+```
 " Installing vim-plug:
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -125,11 +130,6 @@ set directory=.swp/,~/.swp/,/tmp//
 set backupdir=.backup/,~/.backup/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
 ```
-
-{% responsive_image_block %}
-  path: /assets/vim/nvim.png
-  alt: "NeoVim in Terminal"
-{% endresponsive_image_block %}
 
 # (Neo)?Vim Tricks
 
