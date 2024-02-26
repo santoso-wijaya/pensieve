@@ -68,29 +68,33 @@ new plugins: `vim-commentary`, `vim-easymotion`, and `vim-sneak`):
 " Installing vim-plug:
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"
 call plug#begin()
 " The default plugin directory will be as follows:
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 
-" Make sure you use single quotes
-" Shorthand notation; fetches https://github.com/tpope/vim-sensible
 Plug 'tpope/vim-sensible'
-" Binds 'gc' to toggle comments in visual mode
-Plug 'tpope/vim-commentary'
-" Syntax highlighting for Liquid tempaltes
-Plug 'tpope/vim-liquid'
-" Binds some nifty, flighty navigation modes across a f ile
+Plug 'tpope/vim-commentary'     " Binds 'gc' to toggle comments in visual mode
+Plug 'tpope/vim-liquid'         " Syntax highlighting for Liquid templates
+" Binds some nifty, flighty navigation modes across a file
 Plug 'easymotion/vim-easymotion'
-" Any valid git URL is allowed
 " Binds 's{char}{char}' as a quicker 'f' search
-Plug 'https://github.com/justinmk/vim-sneak.git'
-" Official Rust plugin
-Plug 'rust-lang/rust.vim'
+Plug 'justinmk/vim-sneak'
+Plug 'rust-lang/rust.vim'       " Official Rust plugin
+Plug 'preservim/nerdtree'       " A file system explorer in Vim
+Plug 'vim-airline/vim-airline'  " Lean & mean status/tabline
+Plug 'vim-airline/vim-airline-themes'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'       " Adds :FormatCode and :FormatLines commands
+" Also add Glaive, which is used to configure codefmt's maktaba flags.
+Plug 'google/vim-glaive'
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
+
+" the glaive#Install() should go after the "call plug#end()"
+call glaive#Install()
+Glaive codefmt plugin[mappings]
 
 " I was also already using pathogen for Vim to set up Solarized colorscheme.
 
@@ -98,6 +102,19 @@ call plug#end()
 " mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 "     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 execute pathogen#infect()
+
+" Airline customizations; experiment at runtime with `:AirlineTheme` command.
+let g:airline_theme='solarized'
+
+" NERDTree keybindings
+nnoremap <C-t> :NERDTreeToggle<CR>
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+" Start NERDTree when Vim starts with a directory argument, and open a fresh
+" buffer.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') | execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
 
 
 set nocompatible
