@@ -1,4 +1,6 @@
 require 'bundler'
+require 'rake'
+require 'rake/clean'
 
 begin
   Bundler.setup(:default, :development, :jekyll_plugins)
@@ -7,8 +9,6 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
-
-require 'rake'
 
 file 'Gemfile.lock' do |t| sh 'bundle install' end
 CLEAN.include 'Gemfile.lock'
@@ -35,7 +35,7 @@ end
 CLEAN.include 'assets/js/*.rollup.js'
 
 task build: ['Gemfile.lock', 'package-lock.json', 'assets/js/*.rollup.js'] do |t|
-  sh  'bundle exec jekyll build'
+  sh 'bundle exec jekyll build'
 end
 CLEAN.include '.jekyll-cache', '_site'
 
