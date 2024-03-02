@@ -13,6 +13,7 @@ RUN <<EOF
     git \
     gnupg2 \
     libmagickcore-dev \
+    npm \
     procps \
     wget \
     xz-utils \
@@ -21,6 +22,13 @@ EOF
 
 # Clean up
 RUN apt-get clean
+
+RUN <<EOF
+  node -v
+  npm install -g n
+  n lts
+EOF
+RUN node -v
 
 # Use the bash shell with -l (login) from here on.
 # The login behavior is important to trigger RVM's setup scripts.
@@ -36,7 +44,7 @@ EOF
 RUN <<EOF
   rvm list
   ruby -v
-  gem install jekyll bundler
+  gem install bundler
 EOF
 
 # If invoking Jekyll commands that touch files, mount them here.

@@ -17,3 +17,11 @@ _site
 Gemfile.lock
 vendor
 
+# Node.js and NPM
+node_modules
+npm-debug.log*
+package-lock.json
+
+# Rollup generated files
+# See: package.json (scripts["rollup"])
+*.rollup.js
