@@ -13,3 +13,11 @@
 /*--- custom style resets ---*/
 @import "reset";
 /*--- end custom style resets ---*/
+
+/*--- material web customizations --- */
+:root {
+  --md-ref-typeface-brand: Roboto;
+  --md-ref-typeface-plain: system-ui;
+}
+/*--- end material web customizations --- */
+
