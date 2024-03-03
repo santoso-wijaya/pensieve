@@ -10,6 +10,8 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.3"
 gem "minimal-mistakes-jekyll", "4.24.0"
 
+gem "rake"
+
 # "rmagick" is a dependency of "jekyll-responsive-image"
 gem "rmagick" # requires `apt-get install libmagickcore-dev`
 
@@ -18,15 +20,11 @@ gem "rmagick" # requires `apt-get install libmagickcore-dev`
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-archives"
-  gem "jekyll-badges", :git => "https://github.com/santoso-wijaya/jekyll-badges.git"
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-include-cache"
-  gem "jekyll-responsive-image"
-end
-
-group :development do
-  gem "rake"
+	gem "jekyll-archives"
+	gem "jekyll-badges", :git => "https://github.com/santoso-wijaya/jekyll-badges.git"
+	gem "jekyll-feed", "~> 0.12"
+	gem "jekyll-include-cache"
+	gem "jekyll-responsive-image"
 end
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
