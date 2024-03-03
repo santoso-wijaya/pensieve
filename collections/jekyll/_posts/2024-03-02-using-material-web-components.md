@@ -10,6 +10,11 @@ toc: true
 
 ## Buttons
 
+```html
+<md-outlined-button>Back</md-outlined-button>
+<md-filled-button>Next</md-filled-button>
+```
+
 <md-outlined-button>Back</md-outlined-button>
 <md-filled-button>Next</md-filled-button>
 <br />
@@ -26,7 +31,7 @@ I created a `package.json` manifest file.
 ```json
 {
   "engines": {
-    "node": ">=20.11.1"
+    "node": "^18.17.1"
   },
   "dependencies": {
     "@material/web": "^1.2.0"
@@ -36,6 +41,15 @@ I created a `package.json` manifest file.
 
 Now, executing `npm install` will pull Material Web components sources into our
 working directory.
+
+TIP: To install version-specific Node and NPM with the Node version manager `n`:
+
+```sh
+$ apt install npm
+$ node --version
+$ npm install -g n
+$ n 18.17.1 && node --version
+```
 
 ## JavaScript: import components
 

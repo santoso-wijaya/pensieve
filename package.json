@@ -17,8 +17,7 @@
     "node": "^18.17.1"
   },
   "dependencies": {
-    "@material/web": "^1.2.0",
-    "node": "^18.17.1"
+    "@material/web": "^1.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
