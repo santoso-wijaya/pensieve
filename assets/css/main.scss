@@ -1,10 +1,11 @@
 ---
+search: false
 ---
 
 @charset "utf-8";
 
 /*--- theme customizations ---*/
-@use "solarized";
+@use "colors/solarized" as *;
 /*--- end theme customizations ---*/
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -27,5 +28,6 @@ kbd {
   border-radius: 0.25rem;
   padding: 0.15rem 0.4rem;
   border: 1px solid lightgray;
+  font-size: 0.8rem;
 }
 /*--- end misc custom styling ---*/
