@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler'
 require 'rake'
 require 'rake/clean'
@@ -13,17 +15,21 @@ end
 file 'Gemfile.lock' do |t| sh 'bundle install' end
 CLEAN.include 'Gemfile.lock'
 
-# Update the system Node to v18.17.1 (for CloudFlare)
+# Update the system Node to v18.17.1 (for Cloudflare)
 task :npm do |t|
-  sh 'node -v'
-  sh 'npm install -g n'
-  sh 'n 18.17.1'
+  if not ENV['CLOUDFLARE'] then
+    sh 'node -v'
+    sh 'npm install -g n'
+    sh 'n 18.17.1'
+  end
 end
 
 # Then invoke npm to install the content of `package.json`
 file 'package-lock.json' => [:npm] do |t|
-  sh 'node -v'
-  sh 'npm install'
+  if not ENV['CLOUDFLARE'] then
+    sh 'node -v'
+    sh 'npm install'
+  end
 end
 CLEAN.include 'package-lock.json'
 CLEAN.include 'node_modules'
@@ -35,7 +41,12 @@ end
 CLEAN.include 'assets/js/*.rollup.js'
 
 task build: ['Gemfile.lock', 'package-lock.json', 'assets/js/*.rollup.js'] do |t|
-  sh 'bundle exec jekyll build'
+  extra_args = ''
+  if ENV['CLOUDFLARE_PREVIEW'] then
+    extra_args = '--drafts'
+  end
+
+  sh "bundle exec jekyll build #{extra_args}"
 end
 CLEAN.include '.jekyll-cache', '_site'
 
