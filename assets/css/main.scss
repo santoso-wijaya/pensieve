@@ -6,6 +6,7 @@ search: false
 
 /*--- theme customizations ---*/
 @use "colors/solarized" as *;
+@use "fonts/nerd_fonts" as *;
 /*--- end theme customizations ---*/
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
