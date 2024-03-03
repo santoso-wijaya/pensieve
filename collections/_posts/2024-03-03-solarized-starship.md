@@ -22,15 +22,23 @@ $ brew install starship
 ## Installing Nerd Fonts
 
 The prompt heavily utilizes extended unicode glyphs that are available in the
-[Nerd Fonts](https://www.nerdfonts.com/font-downloads) sets. Installing the
-NF extension for Meslo, for instance:
+[Nerd Fonts](https://www.nerdfonts.com/font-downloads) patched fonts set.
+Installing an NF-patched Meslo font, for instance, can be done easily on a Mac
+OS with Homebrew.
 
 ```sh
 $ brew tap homebrew/cask-fonts
 $ brew install --cask font-meslo-lg-nerd-font
 ```
 
-Then, we need to use that font in our Terminal or VSCode apps.
+Then, we need to use that font in our Terminal or VSCode apps. For Terminal.app,
+I find that
+["MesloLGS Nerd Font"](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo/S)
+works best. For VSCode, I am trying out
+["MonaspiceNe Nerd Font"](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Monaspace)
+(based on GitHub's latest
+[Monaspace](https://monaspace.githubnext.com/#learn-more) font family) at the
+moment.
 
 TODO: I need to also use this font for this site. Using the system font default, 
       these glyphs will not be able to render properly.
@@ -108,12 +116,12 @@ disabled = false
 style = "bg:sol_orange fg:base3"
 
 [os.symbols]
-Windows = "󰍲"
+Macos = ""
 Ubuntu = "󰕈"
+Windows = "󰍲"
 SUSE = ""
 Raspbian = "󰐿"
 Mint = "󰣭"
-Macos = ""
 Manjaro = ""
 Linux = "󰌽"
 Gentoo = "󰣨"

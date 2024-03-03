@@ -1,6 +1,17 @@
+/* define a font family for Nerd Fonts patched variant of FiraCode */
+@font-face {
+  font-family: 'FiraCode Nerd Font';
+  src: url('/assets/fonts/FiraCodeNerdFont-Regular.woff2') format('woff2'),
+       url('/assets/fonts/FiraCodeNerdFont-Regular.woff') format('woff'),
+       url('/assets/fonts/FiraCodeNerdFont-Regular.ttf') format('truetype');
+}
+
 /* system typefaces */
 $monospace: 'FiraCode Nerd Font', monospace;
 
 code {
-	font-family: $monospace;
+  font-family: $monospace;
+	font-variant-ligatures: discretionary-ligatures;
 }
+
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
