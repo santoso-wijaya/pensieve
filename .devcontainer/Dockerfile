@@ -5,8 +5,8 @@ LABEL org.opencontainers.image.authors="Santoso Wijaya <code@swijaya.com>"
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN <<EOF
-  apt-get update -q
-  apt-get install -qy --no-install-recommends \
+  apt update -q
+  apt install -qy --no-install-recommends \
     build-essential \
     ca-certificates \
     curl \
@@ -21,14 +21,18 @@ RUN <<EOF
 EOF
 
 # Clean up
-RUN apt-get clean
+RUN apt clean
 
+# Install n (npm version manager); and then install LTS version
 RUN <<EOF
-  node -v
+  node --version
   npm install -g n
   n lts
 EOF
-RUN node -v
+RUN <<EOF
+  node --version
+  npm --version
+EOF
 
 # Use the bash shell with -l (login) from here on.
 # The login behavior is important to trigger RVM's setup scripts.

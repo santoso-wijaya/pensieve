@@ -13,11 +13,11 @@ end
 file 'Gemfile.lock' do |t| sh 'bundle install' end
 CLEAN.include 'Gemfile.lock'
 
-# Update the system Node to latest LTS version
+# Update the system Node to v18.17.1 (for CloudFlare)
 task :npm do |t|
   sh 'node -v'
   sh 'npm install -g n'
-  sh 'n lts'
+  sh 'n 18.17.1'
 end
 
 # Then invoke npm to install the content of `package.json`

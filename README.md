@@ -15,7 +15,7 @@ Once you've set up the build environment, whether locally or remotely in
 Codespaces, build the site with:
 
 ```sh
-$ rake
+$ bundle install && rake
 ```
 
 The generated static files will be located in the `_sites` folder.

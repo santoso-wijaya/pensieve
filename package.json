@@ -14,10 +14,11 @@
   "author": "Santoso Wijaya",
   "homepage": "https://pensieve.swijaya.me",
   "engines": {
-    "node": ">=20.11.1"
+    "node": "^18.17.1"
   },
   "dependencies": {
-    "@material/web": "^1.2.0"
+    "@material/web": "^1.2.0",
+    "node": "^18.17.1"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
