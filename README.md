@@ -15,7 +15,7 @@ Once you've set up the build environment, whether locally or remotely in
 Codespaces, build the site with:
 
 ```sh
-$ bundle exec jekyll build
+$ rake
 ```
 
 The generated static files will be located in the `_sites` folder.
@@ -23,7 +23,7 @@ The generated static files will be located in the `_sites` folder.
 To interact with the pages during development, run the following command:
 
 ```sh
-$ bundle exec jekyll serve
+$ rake serve
 ```
 
 And then open your browser and navigate to http://127.0.0.1:4000/.
