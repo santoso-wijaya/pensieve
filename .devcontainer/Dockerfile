@@ -10,11 +10,14 @@ RUN <<EOF
     build-essential \
     ca-certificates \
     curl \
+    fonts-powerline \
     git \
     gnupg2 \
     libmagickcore-dev \
+    nodejs \
     npm \
     procps \
+    vim \
     wget \
     xz-utils \
     zlib1g-dev
