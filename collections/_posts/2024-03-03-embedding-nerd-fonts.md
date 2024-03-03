@@ -33,32 +33,49 @@ distribution packages on the web. For this project, I need to download the
 patched `.ttf`, compress it into `.woff2`, include it in this site, and define a
 CSS font family out of it.
 
-# Install FiraCode Nerd Font
+# Install Monaspace Nerd Fonts
 
-First, we need to install the patched font to obtain its TTF.
+TIP: [Monaspace](https://monaspace.githubnext.com) (by GitHub) looks gorgeous!
+The whole set is pleasant to behold and I appreciate the coding-specific and
+contextual ligatures that they've done. I'm using it in my IDEs and terminals,
+too, wherever I can.
+
+First, we install the NF-patched fonts set (along with the original).
 
 ```sh
-$ brew install --cask font-fira-code-nerd-font
+$ brew install --cask font-monaspace-nerd-font font-monaspace
 ```
 
-# Define a new font family
+We can then convert the downloaded OTF (OpenType Fonts) files into WOFF
+(Web Fonts) files.
+
+# Define a new web font family
 
 In our SCSS file:
 
 ```scss
-/* define a font family for Nerd Fonts patched variant of FiraCode */
+/* Define a font family for Nerd Fonts patched variant of Monaspace Neon. */
 @font-face {
-  font-family: 'FiraCode Nerd Font';
-  src: url('/assets/fonts/FiraCodeNerdFont-Regular.woff2') format('woff2'),
-       url('/assets/fonts/FiraCodeNerdFont-Regular.woff') format('woff'),
-       url('/assets/fonts/FiraCodeNerdFont-Regular.ttf') format('truetype');
+  font-family: 'MonaspiceNe Nerd Font';
+  src: url('/assets/fonts/MonaspiceNeNerdFont-Regular.woff2') format('woff2'),
+       url('/assets/fonts/MonaspiceNeNerdFont-Regular.woff') format('woff'),
+       url('/assets/fonts/MonaspiceNeNerdFont-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* system typefaces */
-$monospace: 'FiraCode Nerd Font', monospace;
+$monospace: 'MonaspiceNe Nerd Font', monospace;
 
-code {
+tt,
+code,
+kbd,
+samp,
+pre {
   font-family: $monospace;
+  // Render all ligature and contextual healing features in Monaspace.
+  // See: https://github.com/githubnext/monaspace?tab=readme-ov-file#coding-ligatures
+  font-feature-settings: 'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08';
 }
 ```
 
@@ -70,11 +87,12 @@ We can also render NF glyphs using CSS class names. See:
 ```html
 @import "https://www.nerdfonts.com/assets/css/webfont.css"
 
-I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
-<i class="nf nf-custom-neovim"></i>
+I really <i class="nf nf-fa-heart"></i>
+         <i class="nf nf-custom-vim">im</i>
+         <i class="nf nf-custom-neovim">vim</i>
 ```
 
 <center>
-I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
-<i class="nf nf-custom-neovim"></i>
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim">im</i>
+         <i class="nf nf-custom-neovim">vim</i>
 </center>

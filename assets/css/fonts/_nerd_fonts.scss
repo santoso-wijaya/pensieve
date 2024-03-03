@@ -1,17 +1,35 @@
-/* define a font family for Nerd Fonts patched variant of FiraCode */
+/* Define a font family for Nerd Fonts patched variant of FiraCode. */
 @font-face {
-  font-family: 'FiraCode Nerd Font';
-  src: url('/assets/fonts/FiraCodeNerdFont-Regular.woff2') format('woff2'),
-       url('/assets/fonts/FiraCodeNerdFont-Regular.woff') format('woff'),
-       url('/assets/fonts/FiraCodeNerdFont-Regular.ttf') format('truetype');
+	font-family: 'FiraCode Nerd Font';
+	src: url('/assets/fonts/FiraCodeNerdFont-Regular.woff2') format('woff2'),
+			 url('/assets/fonts/FiraCodeNerdFont-Regular.woff') format('woff'),
+			 url('/assets/fonts/FiraCodeNerdFont-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Define a font family for Nerd Fonts patched variant of Monaspace Neon. */
+@font-face {
+	font-family: 'MonaspiceNe Nerd Font';
+	src: url('/assets/fonts/MonaspiceNeNerdFont-Regular.woff2') format('woff2'),
+			 url('/assets/fonts/MonaspiceNeNerdFont-Regular.woff') format('woff'),
+			 url('/assets/fonts/MonaspiceNeNerdFont-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* system typefaces */
-$monospace: 'FiraCode Nerd Font', monospace;
+// $monospace: 'FiraCode Nerd Font', monospace;
+$monospace: 'MonaspiceNe Nerd Font', monospace;
 
-code {
+tt,
+code,
+kbd,
+samp,
+pre {
   font-family: $monospace;
-	font-variant-ligatures: discretionary-ligatures;
+  // Render all ligature and contextual healing features in Monaspace.
+  // See: https://github.com/githubnext/monaspace?tab=readme-ov-file#coding-ligatures
+  font-feature-settings: 'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08';
 }
 
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
