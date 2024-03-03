@@ -8,6 +8,8 @@ tags  : vim nvim terminal editor
   alt: "NeoVim in Terminal"
 {% endresponsive_image_block %}
 
+<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> is home.
+
 I have been using vim and various IDEs with vim-like bindings for a good long
 while now, ever since college.
 
@@ -149,12 +151,6 @@ set directory=.swp/,~/.swp/,/tmp//
 set backupdir=.backup/,~/.backup/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
 {% endhighlight %}
-
-# (Neo)?Vim Tricks
-
-These posts illustrate the power of Vim that inspires me:
-
-*   [*3 Vim commands for blazingly fast navigation between brackets ⚡*](https://dev.to/m4xshen/3-vim-commands-for-blazingly-fast-navigation-between-brackets-55kc)
 
 # Next: Mastering LSPs
 

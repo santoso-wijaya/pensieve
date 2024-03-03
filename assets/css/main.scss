@@ -14,10 +14,18 @@
 @import "reset";
 /*--- end custom style resets ---*/
 
-/*--- material web customizations --- */
+/*--- material web customizations ---*/
 :root {
   --md-ref-typeface-brand: Roboto;
   --md-ref-typeface-plain: system-ui;
 }
-/*--- end material web customizations --- */
+/*--- end material web customizations ---*/
 
+/*--- misc custom styling ---*/
+kbd {
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+  padding: 0.15rem 0.4rem;
+  border: 1px solid lightgray;
+}
+/*--- end misc custom styling ---*/
