@@ -1,9 +1,8 @@
 ---
-title: "Using Material Design Web Components"
+title: "Using Material Web Components"
 tag: material design
 tag: node.js
 tag: web component
-tag: material design
 toc: true
 ---
 
