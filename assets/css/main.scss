@@ -5,8 +5,11 @@ search: false
 @charset "utf-8";
 
 /*--- theme customizations ---*/
+$doc-font-size: 14;
+
 @use "colors/solarized" as *;
 @use "fonts/nerd_fonts" as *;
+@use "fonts/google_fonts" as *;
 /*--- end theme customizations ---*/
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -18,8 +21,8 @@ search: false
 
 /*--- material web customizations ---*/
 :root {
-  --md-ref-typeface-brand: Roboto;
-  --md-ref-typeface-plain: system-ui;
+  --md-ref-typeface-brand: $global-font-family;
+  --md-ref-typeface-plain: $global-font-family;
 }
 /*--- end material web customizations ---*/
 
@@ -30,5 +33,11 @@ kbd {
   padding: 0.15rem 0.4rem;
   border: 1px solid lightgray;
   font-size: 0.8rem;
+}
+
+a {
+  &:link, &:visited {
+    text-decoration: none;
+  }
 }
 /*--- end misc custom styling ---*/
