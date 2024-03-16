@@ -1,5 +1,5 @@
 ---
-title: "NeoVim Plugins: NERDTree and CoC"
+title: "NeoVim as an IDE"
 tags: vim neovim plugin lsp editor
 ---
 
@@ -25,33 +25,27 @@ call plug#end()
 " NERDTree keybindings
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-" Start NERDTree when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
-" Start NERDTree when Vim starts with a directory argument, and open a fresh
-" buffer.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') | execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
-autocmd BufEnter * if winnr() == winnr('h') && bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
-    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+" ... (other keybindings and useful autocmds)
 {% endhighlight %}
 
-This setup lets me toggle the NERDTree explorer with <kbd>Ctrl</kbd> +
-<kbd>T</kbd>, among other automatic quality of life behaviors. The interface
-is intuitive enough to use.
+This setup lets me toggle the NERDTree explorer with
+<kbd>Ctrl</kbd>+<kbd>T</kbd>, among other automatic quality of life behaviors.
+The interface is intuitive enough to use.
 
-## Adding richer language support with CoC
+{% responsive_image_block %}
+  path: assets/vim/nvim_nerdtree.png
+  alt: "NeoVim with NERDTree shown"
+{% endresponsive_image_block %}
+
+## Adding language support with CoC
 
 This one is a bit more involved, as a client-server architecture is involved.
-From my research, the go-to tool for adding auto-complete and other language
-support to NeoVim is [`coc.nvim`](https://github.com/neoclide/coc.nvim). And
-it's got its own extension ecosystem for users to add language support as they
-need them.
+There are many language servers out there that we can use, and many plugins for
+(Neo)Vim that act as LSP clients.
+
+I'm trying out [`coc.nvim`](https://github.com/neoclide/coc.nvim) right now. 
+It's got its own extension ecosystem for us to add language support as we need
+them.
 
 The Vim plugin part of CoC itself is supposed to be a thin client to a
 language server where most of the language logic resides. The plugin handles
