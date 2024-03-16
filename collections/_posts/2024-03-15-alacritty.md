@@ -9,9 +9,9 @@ developer tools written in Rust, a language beloved by the developer community,
 have been impressing me a lot lately. The prompt app
 [Starship](https://starship.rs) and NeoVim GUI NeoVide come to mind.
 
-I discovered Alacritty on my search for an alternative--preferably x-platform--
-terminal emulator, as I kept bumping against Mac OS' default Terminal.app's
-limitations and rough edges.
+I discovered Alacritty on my search for an alternative---preferably
+cross-platform---terminal emulator, as I kept bumping against Mac OS' default
+Terminal.app's limitations and rough edges.
 
 What drew me the most to Alacritty is its configurability and customization
 options, especially as they can be expressed in developer-friendly `.toml` file

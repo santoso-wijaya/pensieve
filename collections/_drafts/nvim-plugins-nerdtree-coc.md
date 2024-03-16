@@ -3,10 +3,7 @@ title: "NeoVim as an IDE"
 tags: vim neovim plugin lsp editor
 ---
 
-{% responsive_image_block %}
-  path: assets/vim/nvim_nerdtree_coc.png
-  alt: "NeoVim with NERDTree and CoC"
-{% endresponsive_image_block %}
+<!-- TODO: add screenshot here -->
 
 ## Adding a file explorer to Vim with NERDTree plugin
 
@@ -32,10 +29,7 @@ This setup lets me toggle the NERDTree explorer with
 <kbd>Ctrl</kbd>+<kbd>T</kbd>, among other automatic quality of life behaviors.
 The interface is intuitive enough to use.
 
-{% responsive_image_block %}
-  path: assets/vim/nvim_nerdtree.png
-  alt: "NeoVim with NERDTree shown"
-{% endresponsive_image_block %}
+<!-- TODO: add screenshot here -->
 
 ## Adding language support with CoC
 
