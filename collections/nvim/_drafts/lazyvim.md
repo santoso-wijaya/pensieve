@@ -1,0 +1,80 @@
+---
+title: "LazyVim: Deeper into NeoVim"
+tags: vim neovim lazyvim plugin ide editor solarized
+
+gallery-lazyvim-neovide-solarized-light:
+- url           : /assets/nvim/lazyvim-neovide-solarized-light-1.png
+  image_path    : /assets/nvim/lazyvim-neovide-solarized-light-1.png
+  alt           : "LazyVim in NeoVide with Solarized light colorscheme"
+  title         : "LazyVim in NeoVide with Solarized"
+- url           : /assets/nvim/lazyvim-neovide-solarized-light-2.png
+  image_path    : /assets/nvim/lazyvim-neovide-solarized-light-2.png
+  alt           : "LazyVim in NeoVide with Solarized light colorscheme"
+  title         : "LazyVim in NeoVide with Solarized"
+- url           : /assets/nvim/lazyvim-neovide-solarized-light-3.png
+  image_path    : /assets/nvim/lazyvim-neovide-solarized-light-3.png
+  alt           : "LazyVim in NeoVide with Solarized light colorscheme"
+  title         : "LazyVim in NeoVide with Solarized"
+---
+
+## LazyVim 💤
+
+LazyVim is a NeoVim plugin manager. It comes with a bundle of plugins that the
+author/community has vetted to be working quite well together.
+
+It makes managing nvim plugins and configuring them to your tastes quite easy
+and pleasant to do. I've been having a blast with it.
+
+{% responsive_image_block %}
+  path: "assets/nvim/lazyvim-neovide-solarized-dark.png"
+  alt: "LazyVim in NeoVide with Solarized dark colorscheme"
+{% endresponsive_image_block %}
+
+## Solarized ☯
+
+The first thing that I did was to install and configure Solarized colorscheme.
+
+In LazyVim, I simply created a
+[`solarized.lua`](https://github.com/santoso-wijaya/lazyvim-config/blob/3d9393adacaa03bdb5a44e6a3c920096cefb3cfe/lua/plugins/solarized.lua)
+file in `~/.config/nvim/lua/plugins` directory.
+
+```lua
+return {
+  -- add Lua-scriptable solarized color scheme
+  {
+    "maxmx03/solarized.nvim",
+    lazy = false,
+    name = "solarized",
+    main = "solarized",
+    priority = 1000,
+    -- See: https://www.lazyvim.org/configuration/plugins#%EF%B8%8F-customizing-plugin-specs
+    opts = {
+      -- See: https://github.com/maxmx03/solarized.nvim?tab=readme-ov-file#default-config
+      styles = {
+        -- Turn off the bolding of keywords syntax that this particular scheme does
+        keywords = { bold = false },
+      },
+    },
+    config = function(plugin, opts)
+      vim.o.background = "light"
+      require(plugin.main).setup(opts)
+      vim.cmd.colorscheme = "solarized"
+    end,
+  },
+
+  -- configure LazyVim to load solarized
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "solarized",
+    },
+  },
+}
+```
+
+I quite enjoyed how much more structured that process was, especially NeoVim's
+scriptability with Lua.
+
+In NeoVide, this looks 🔥
+
+{% include gallery id="gallery-lazyvim-neovide-solarized-light" class="full" %}
