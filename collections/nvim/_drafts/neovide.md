@@ -1,0 +1,23 @@
+---
+title: "NeoVide: a NeoVim GUI in Rust"
+tags: neovim gui rust editor
+---
+
+{% responsive_image_block %}
+  path: "assets/nvim/neovide.png"
+  alt: "NeoVide"
+{% endresponsive_image_block %}
+
+👆🏼 Neovide with notable settings and plugins:
+
+*   [NERDTree](https://github.com/preservim/nerdtree)
+*   gutters shown
+*   [vim-airline](https://github.com/vim-airline/vim-airline), with
+    *   [devicons](https://devicon.dev)
+    *   Monaspace Neon [Nerd Font](https://www.nerdfonts.com/font-downloads)
+        for glyphs
+*   Solarized color scheme
+
+I'd been zipping around NeoVim, in both terminal and NeoVide, especially with
+a newfound power in `mini.jump2d` and `vim-easymotion` (I would eventually
+replace these two with [`hop.nvim`](https://github.com/hadronized/hop.nvim)).
