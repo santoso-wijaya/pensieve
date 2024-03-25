@@ -1,6 +1,7 @@
 ---
-title:  "Building Pensieve"
+title: "Building Pensieve"
 tags: jekyll blog
+classes: wide
 ---
 
 I spent this weekend building this personal site of mine.

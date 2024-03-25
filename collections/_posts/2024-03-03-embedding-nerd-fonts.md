@@ -1,6 +1,7 @@
 ---
 title: Embedding a Nerd Font
 tags: web fonts typography
+classes: wide
 ---
 
 I want to embed a Nerd Font patched font on this site. If it works, it should be

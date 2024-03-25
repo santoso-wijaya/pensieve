@@ -1,6 +1,7 @@
 ---
-title:  "Solarized"
-tag: color scheme
+title: Solarized
+tag: colorscheme
+classes: wide
 ---
 
 I love [Solarized](https://ethanschoonover.com/solarized/) color scheme. I use

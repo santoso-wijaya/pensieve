@@ -1,6 +1,7 @@
 ---
 title: Alacritty
 tags: terminal
+classes: wide
 ---
 
 [Alacritty](https://github.com/alacritty/alacritty) is a cross-platform terminal

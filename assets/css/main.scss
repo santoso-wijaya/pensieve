@@ -19,25 +19,5 @@ $doc-font-size: 14;
 @import "reset";
 /*--- end custom style resets ---*/
 
-/*--- material web customizations ---*/
-:root {
-  --md-ref-typeface-brand: $global-font-family;
-  --md-ref-typeface-plain: $global-font-family;
-}
-/*--- end material web customizations ---*/
-
-/*--- misc custom styling ---*/
-kbd {
-  background-color: #f3f4f6;
-  border-radius: 0.25rem;
-  padding: 0.15rem 0.4rem;
-  border: 1px solid lightgray;
-  font-size: 0.8rem;
-}
-
-a {
-  &:link, &:visited {
-    text-decoration: none;
-  }
-}
-/*--- end misc custom styling ---*/
+@import "custom";
+@import "syntax";

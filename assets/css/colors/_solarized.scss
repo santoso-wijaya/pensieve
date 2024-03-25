@@ -69,15 +69,15 @@ $sol-green     : #859900;
  // ----------------------------------------------------------------------------
 
  // Considering all that, the Minimal Mistakes color scheme for
- // DARK solarized is:
-$base00: $sol-base02;  // background highlights
-$base01: $sol-base01;  // -
-$base02: $sol-base1;   // optional emphasized content
-$base03: $sol-base0;   // primary content
-$base04: $sol-base01;  // comments / secondary content
-$base05: $sol-base1;   // optional emphasized content
-$base06: $sol-base03;  // background
-$base07: $sol-base02;  // background highlights
+ // LIGHT solarized is (in syntax highlighting CSS code):
+$base00: $sol-base2;   // background highlights
+$base01: $sol-base1;   // -
+$base02: $sol-base01;  // optional emphasized content
+$base03: $sol-base00;  // primary content
+$base04: $sol-base1;   // comments / secondary content
+$base05: $sol-base01;  // optional emphasized content
+$base06: $sol-base3;   // background
+$base07: $sol-base2;   // background highlights
 $base08: $sol-red;
 $base09: $sol-orange;
 $base0a: $sol-yellow;
@@ -90,7 +90,7 @@ $base0f: $sol-magenta;
 // The rest of colors customizations below
 
 /* ==========================================================================
-   Air skin: Solarized
+   Solarized
    ========================================================================== */
 
 /* Colors */

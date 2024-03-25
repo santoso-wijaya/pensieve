@@ -5,106 +5,106 @@ toc       : true
 toc_icon  : "keyboard"
 
 gallery-pcb:
-  - url           : /assets/keebs/kit-adams/pcb1.jpeg
-    image_path    : /assets/keebs/kit-adams/pcb1.jpeg
-    alt           : &pcb "An ADAM/アダム PCB"
-    title         : *pcb
-  - url           : /assets/keebs/kit-adams/pcb2.jpeg
-    image_path    : /assets/keebs/kit-adams/pcb2.jpeg
-    alt           : &pcb
-    title         : *pcb
-  - url           : /assets/keebs/kit-adams/pcb3.jpeg
-    image_path    : /assets/keebs/kit-adams/pcb3.jpeg
-    alt           : &pcb
-    title         : *pcb
+- url           : /assets/keebs/kit-adams/pcb1.jpeg
+  image_path    : /assets/keebs/kit-adams/pcb1.jpeg
+  alt           : &pcb "An ADAM/アダム PCB"
+  title         : *pcb
+- url           : /assets/keebs/kit-adams/pcb2.jpeg
+  image_path    : /assets/keebs/kit-adams/pcb2.jpeg
+  alt           : &pcb
+  title         : *pcb
+- url           : /assets/keebs/kit-adams/pcb3.jpeg
+  image_path    : /assets/keebs/kit-adams/pcb3.jpeg
+  alt           : &pcb
+  title         : *pcb
 
 gallery-stabs:
-  - url           : /assets/keebs/kit-adams/stabs1.jpeg
-    image_path    : /assets/keebs/kit-adams/stabs1.jpeg
-    alt           : &stabs "Stabilizers mounted into the plate"
-    title         : *stabs
-  - url           : /assets/keebs/kit-adams/stabs2.jpeg
-    image_path    : /assets/keebs/kit-adams/stabs2.jpeg
-    alt           : *stabs
-    title         : *stabs
-  - url           : /assets/keebs/kit-adams/stabs3.jpeg
-    image_path    : /assets/keebs/kit-adams/stabs3.jpeg
-    alt           : *stabs
-    title         : *stabs
+- url           : /assets/keebs/kit-adams/stabs1.jpeg
+  image_path    : /assets/keebs/kit-adams/stabs1.jpeg
+  alt           : &stabs "Stabilizers mounted into the plate"
+  title         : *stabs
+- url           : /assets/keebs/kit-adams/stabs2.jpeg
+  image_path    : /assets/keebs/kit-adams/stabs2.jpeg
+  alt           : *stabs
+  title         : *stabs
+- url           : /assets/keebs/kit-adams/stabs3.jpeg
+  image_path    : /assets/keebs/kit-adams/stabs3.jpeg
+  alt           : *stabs
+  title         : *stabs
 
 gallery-switches:
-  - url           : /assets/keebs/kit-adams/switches1.jpeg
-    image_path    : /assets/keebs/kit-adams/switches1.jpeg
-    alt           : &switches "Gateron Jupiter brown tactile switches"
-    title         : *switches
-  - url           : /assets/keebs/kit-adams/switches2.jpeg
-    image_path    : /assets/keebs/kit-adams/switches2.jpeg
-    alt           : *switches
-    title         : *switches
-  - url           : /assets/keebs/kit-adams/switches3.jpeg
-    image_path    : /assets/keebs/kit-adams/switches3.jpeg
-    alt           : *switches
-    title         : *switches
-  - url           : /assets/keebs/kit-adams/switches4.jpeg
-    image_path    : /assets/keebs/kit-adams/switches4.jpeg
-    alt           : *switches
-    title         : *switches
-  - url           : /assets/keebs/kit-adams/switches5.jpeg
-    image_path    : /assets/keebs/kit-adams/switches5.jpeg
-    alt           : *switches
-    title         : *switches
+- url           : /assets/keebs/kit-adams/switches1.jpeg
+  image_path    : /assets/keebs/kit-adams/switches1.jpeg
+  alt           : &switches "Gateron Jupiter brown tactile switches"
+  title         : *switches
+- url           : /assets/keebs/kit-adams/switches2.jpeg
+  image_path    : /assets/keebs/kit-adams/switches2.jpeg
+  alt           : *switches
+  title         : *switches
+- url           : /assets/keebs/kit-adams/switches3.jpeg
+  image_path    : /assets/keebs/kit-adams/switches3.jpeg
+  alt           : *switches
+  title         : *switches
+- url           : /assets/keebs/kit-adams/switches4.jpeg
+  image_path    : /assets/keebs/kit-adams/switches4.jpeg
+  alt           : *switches
+  title         : *switches
+- url           : /assets/keebs/kit-adams/switches5.jpeg
+  image_path    : /assets/keebs/kit-adams/switches5.jpeg
+  alt           : *switches
+  title         : *switches
 
 gallery-case:
-  - url           : /assets/keebs/kit-adams/case1.jpeg
-    image_path    : /assets/keebs/kit-adams/case1.jpeg
-    alt           : &case "Building the lego-like casing"
-    title         : *case
-  - url           : /assets/keebs/kit-adams/case2.jpeg
-    image_path    : /assets/keebs/kit-adams/case2.jpeg
-    alt           : *case
-    title         : *case
+- url           : /assets/keebs/kit-adams/case1.jpeg
+  image_path    : /assets/keebs/kit-adams/case1.jpeg
+  alt           : &case "Building the lego-like casing"
+  title         : *case
+- url           : /assets/keebs/kit-adams/case2.jpeg
+  image_path    : /assets/keebs/kit-adams/case2.jpeg
+  alt           : *case
+  title         : *case
 
 gallery-padding:
-  - url           : /assets/keebs/kit-adams/padding1.jpeg
-    image_path    : /assets/keebs/kit-adams/padding1.jpeg
-    alt           : &padding "Foam paddings"
-    title         : *padding
-  - url           : /assets/keebs/kit-adams/padding2.jpeg
-    image_path    : /assets/keebs/kit-adams/padding2.jpeg
-    alt           : *padding
-    title         : *padding
+- url           : /assets/keebs/kit-adams/padding1.jpeg
+  image_path    : /assets/keebs/kit-adams/padding1.jpeg
+  alt           : &padding "Foam paddings"
+  title         : *padding
+- url           : /assets/keebs/kit-adams/padding2.jpeg
+  image_path    : /assets/keebs/kit-adams/padding2.jpeg
+  alt           : *padding
+  title         : *padding
 
 gallery-keycaps:
-  - url           : /assets/keebs/kit-adams/keycaps1.jpeg
-    image_path    : /assets/keebs/kit-adams/keycaps1.jpeg
-    alt           : &keycaps "Matcha keycaps"
-    title         : *keycaps
-  - url           : /assets/keebs/kit-adams/keycaps2.jpeg
-    image_path    : /assets/keebs/kit-adams/keycaps2.jpeg
-    alt           : &keycaps "Matcha keycaps"
-    title         : *keycaps
-  - url           : /assets/keebs/kit-adams/keycaps_werk.jpeg
-    image_path    : /assets/keebs/kit-adams/keycaps_werk.jpeg
-    alt           : "Partially installed keycaps spelling WERK"
-    title         : "WERK!"
-  - url           : /assets/keebs/kit-adams/keycaps_aisu.jpeg
-    image_path    : /assets/keebs/kit-adams/keycaps_aisu.jpeg
-    alt           : "Partially installed keycaps spelling あいすきみを"
-    title         : "あいすキミを"
+- url           : /assets/keebs/kit-adams/keycaps1.jpeg
+  image_path    : /assets/keebs/kit-adams/keycaps1.jpeg
+  alt           : &keycaps "Matcha keycaps"
+  title         : *keycaps
+- url           : /assets/keebs/kit-adams/keycaps2.jpeg
+  image_path    : /assets/keebs/kit-adams/keycaps2.jpeg
+  alt           : &keycaps "Matcha keycaps"
+  title         : *keycaps
+- url           : /assets/keebs/kit-adams/keycaps_werk.jpeg
+  image_path    : /assets/keebs/kit-adams/keycaps_werk.jpeg
+  alt           : "Partially installed keycaps spelling WERK"
+  title         : "WERK!"
+- url           : /assets/keebs/kit-adams/keycaps_aisu.jpeg
+  image_path    : /assets/keebs/kit-adams/keycaps_aisu.jpeg
+  alt           : "Partially installed keycaps spelling あいすきみを"
+  title         : "あいすキミを"
 
 gallery-done:
-  - url           : /assets/keebs/kit-adams/done1.jpeg
-    image_path    : /assets/keebs/kit-adams/done1.jpeg
-    alt           : &done "Finished keyboard"
-    title         : *done
-  - url           : /assets/keebs/kit-adams/done_pegboard.jpeg
-    image_path    : /assets/keebs/kit-adams/done_pegboard.jpeg
-    alt           : &pegboard "Finished keyboard mounted on pegboard"
-    title         : *pegboard
-  - url           : /assets/keebs/kit-adams/done2.jpeg
-    image_path    : /assets/keebs/kit-adams/done2.jpeg
-    alt           : *done
-    title         : *done
+- url           : /assets/keebs/kit-adams/done1.jpeg
+  image_path    : /assets/keebs/kit-adams/done1.jpeg
+  alt           : &done "Finished keyboard"
+  title         : *done
+- url           : /assets/keebs/kit-adams/done_pegboard.jpeg
+  image_path    : /assets/keebs/kit-adams/done_pegboard.jpeg
+  alt           : &pegboard "Finished keyboard mounted on pegboard"
+  title         : *pegboard
+- url           : /assets/keebs/kit-adams/done2.jpeg
+  image_path    : /assets/keebs/kit-adams/done2.jpeg
+  alt           : *done
+  title         : *done
 ---
 
 I spent the day building Kit Adam today. 楽しかったよ。

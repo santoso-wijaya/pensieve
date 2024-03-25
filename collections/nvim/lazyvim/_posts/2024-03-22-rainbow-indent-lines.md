@@ -1,6 +1,7 @@
 ---
 title: "Rainbow Indent Lines"
 tags: vim neovim lazyvim plugin rainbow
+classes: wide
 ---
 
 LazyVim also comes with the "ibl"

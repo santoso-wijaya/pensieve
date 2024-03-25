@@ -1,6 +1,7 @@
 ---
-title : "Exploring NeoVim"
-tags  : vim nvim terminal editor
+title: "Exploring NeoVim"
+tags: vim nvim terminal editor
+classes: wide
 ---
 
 {% responsive_image_block %}
