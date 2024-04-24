@@ -1,0 +1,101 @@
+/* selenized (light) naming scheme */
+/* see: https://github.com/jan-warchol/selenized/blob/master/the-values.md */
+
+// background and content tones:
+$bg_0:  #fbf3db;
+$bg_1:  #ece3cc;
+$bg_2:  #d5cdb6;
+$dim_0: #909995;
+$fg_0:  #53676d;
+$fg_1:  #3a4d53;
+// accent colors:
+$yellow:  #ad8900;
+$orange:  #c25d1e;
+$red:     #d2212d;
+$magenta: #ca4898;
+$violet:  #8762c6;
+$blue:    #0072d4;
+$cyan:    #009c8f;
+$green:   #489100;
+
+/* NOTE: minimal-mistakes uses roughly the following color assignments for
+ *       syntax highlighting in code blocks:
+ *       (see: _sass/minimal-mistakes/_syntax.scss)
+ * $base00: (highlight background)
+ * $base01: (unused)
+ * $base02: (unused)
+ * $base03: (unused)
+ * $base04: comment, doc, (line numbers)
+ * $base05: name, punctuation, builtin, entity, label, property, (highlight)
+ * $base06: background
+ * $base07: (unused)
+ * $base08: error, exception, generic, constant, variable
+ * $base09: literal, number
+ * $base0a: type, class, namespace
+ * $base0b: date, string, regex, symbol
+ * $base0c: operator, namespace, decorator, tag
+ * $base0d: attribute, function
+ * $base0e: keyword
+ * $base0f: (unused)
+ */
+
+// ----------------------------------------------------------------------------
+
+// Considering all that, the Minimal Mistakes color scheme for
+// LIGHT solarized is (in syntax highlighting CSS code):
+$base00: $bg_1; // background highlights
+$base01: $dim_0; // -
+$base02: $fg_0; // optional emphasized content
+$base03: $fg_1; // primary content
+$base04: $dim_0; // comments / secondary content
+$base05: $fg_0; // optional emphasized content
+$base06: $bg_0; // background
+$base07: $bg_1; // background highlights
+$base08: $red;
+$base09: $orange;
+$base0a: $yellow;
+$base0b: $green;
+$base0c: $cyan;
+$base0d: $blue;
+$base0e: $violet;
+$base0f: $magenta;
+
+// The rest of colors customizations below
+
+/* ==========================================================================
+   Selenized (light))
+   ========================================================================== */
+
+/* Colors */
+$background-color: $bg_0;
+$text-color: $fg_1;
+$muted-text-color: $dim_0;
+$primary-color: $blue;
+$border-color: $bg_2;
+$footer-background-color: $primary-color !default;
+$link-color: $cyan;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $text-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: $fg_1 !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+/* ==========================================================================
+   More color customizations
+   ========================================================================== */
+
+$code-background-color: $bg_1;
+$code-background-color-dark: $fg_1;
+
+$success-color: $cyan;
+$warning-color: $orange;
+$danger-color: $red;
+$info-color: $green;
+$focus-color: $primary-color !default;
+$active-color: mix(#fff, $primary-color, 80%) !default;
