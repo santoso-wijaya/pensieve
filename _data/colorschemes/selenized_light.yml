@@ -1,0 +1,181 @@
+palette: Selenized light
+colors:
+
+  - name: bg_0
+    lab:
+      l: 96
+      a: 0
+      b: 13
+    rgb:
+      r: 254
+      g: 243
+      b: 218
+      hex: "#fef3da"
+
+  - name: bg_1
+    lab:
+      l: 91
+      a: 0
+      b: 13
+    rgb:
+      r: 240
+      g: 228
+      b: 204
+      hex: "#f0e4cc"
+
+  - name: bg_2
+    lab:
+      l: 82
+      a: 0
+      b: 13
+    rgb:
+      r: 214
+      g: 203
+      b: 180
+      hex: "#d6cbb4"
+
+  - name: dim_0
+    lab:
+      l: 62
+      a: -4
+      b: 1
+    rgb:
+      r: 143
+      g: 152
+      b: 148
+      hex: "#8f9894"
+
+  - name: fg_0
+    lab:
+      l: 42
+      a: -6
+      b: -6
+    rgb:
+      r: 82
+      g: 102
+      b: 109
+      hex: "#52666d"
+
+  - name: fg_1
+    lab:
+      l: 31
+      a: -6
+      b: -6
+    rgb:
+      r: 56
+      g: 76
+      b: 82
+      hex: "#384c52"
+
+  - name: unused_0
+    lab:
+      l: 28
+      a: -13
+      b: -13
+    rgb:
+      r: 14
+      g: 73
+      b: 86
+      hex: "#0e4956"
+
+  - name: unused_1
+    lab:
+      l: 23
+      a: -12
+      b: -12
+    rgb:
+      r: 5
+      g: 61
+      b: 72
+      hex: "#053d48"
+
+  - name: red
+    lab:
+      l: 46
+      a: 66
+      b: 42
+    rgb:
+      r: 212
+      g: 33
+      b: 43
+      hex: "#d4212b"
+
+  - name: orange
+    lab:
+      l: 52
+      a: 39
+      b: 52
+    rgb:
+      r: 199
+      g: 93
+      b: 32
+      hex: "#c75d20"
+
+  - name: magenta
+    lab:
+      l: 52
+      a: 58
+      b: -16
+    rgb:
+      r: 203
+      g: 76
+      b: 153
+      hex: "#cb4c99"
+
+  - name: green
+    lab:
+      l: 54
+      a: -40
+      b: 58
+    rgb:
+      r: 83
+      g: 145
+      b: 0
+      hex: "#539100"
+
+  - name: cyan
+    lab:
+      l: 57
+      a: -42
+      b: -4
+    rgb:
+      r: 0
+      g: 156
+      b: 143
+      hex: "#009c8f"
+
+  - name: blue
+    lab:
+      l: 46
+      a: 0
+      b: -60
+    rgb:
+      r: 0
+      g: 115
+      b: 210
+      hex: "#0073d2"
+
+  - name: yellow
+    lab:
+      l: 59
+      a: 6
+      b: 71
+    rgb:
+      r: 179
+      g: 136
+      b: 0
+      hex: "#b38800"
+
+  - name: violet
+    lab:
+      l: 49
+      a: 32
+      b: -57
+    rgb:
+      r: 108
+      g: 102
+      b: 214
+      hex: "#6c66d6"
+
+
+

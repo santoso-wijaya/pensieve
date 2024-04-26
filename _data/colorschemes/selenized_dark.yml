@@ -1,0 +1,181 @@
+palette: Selenized dark
+colors:
+
+  - name: bg_0
+    lab:
+      l: 23
+      a: -12
+      b: -12
+    rgb:
+      r: 5
+      g: 61
+      b: 72
+      hex: "#053d48"
+
+  - name: bg_1
+    lab:
+      l: 28
+      a: -13
+      b: -13
+    rgb:
+      r: 14
+      g: 73
+      b: 86
+      hex: "#0e4956"
+
+  - name: bg_2
+    lab:
+      l: 36
+      a: -13
+      b: -13
+    rgb:
+      r: 39
+      g: 91
+      b: 105
+      hex: "#275b69"
+
+  - name: dim_0
+    lab:
+      l: 56
+      a: -8
+      b: -6
+    rgb:
+      r: 113
+      g: 139
+      b: 144
+      hex: "#718b90"
+
+  - name: fg_0
+    lab:
+      l: 75
+      a: -5
+      b: -2
+    rgb:
+      r: 173
+      g: 188
+      b: 188
+      hex: "#adbcbc"
+
+  - name: fg_1
+    lab:
+      l: 85
+      a: -5
+      b: -2
+    rgb:
+      r: 200
+      g: 215
+      b: 216
+      hex: "#c8d7d8"
+
+  - name: unused_0
+    lab:
+      l: 91
+      a: 0
+      b: 13
+    rgb:
+      r: 240
+      g: 228
+      b: 204
+      hex: "#f0e4cc"
+
+  - name: unused_1
+    lab:
+      l: 96
+      a: 0
+      b: 13
+    rgb:
+      r: 254
+      g: 243
+      b: 218
+      hex: "#fef3da"
+
+  - name: red
+    lab:
+      l: 60
+      a: 63
+      b: 40
+    rgb:
+      r: 253
+      g: 86
+      b: 78
+      hex: "#fd564e"
+
+  - name: orange
+    lab:
+      l: 67
+      a: 37
+      b: 50
+    rgb:
+      r: 243
+      g: 134
+      b: 73
+      hex: "#f38649"
+
+  - name: magenta
+    lab:
+      l: 66
+      a: 55
+      b: -15
+    rgb:
+      r: 241
+      g: 118
+      b: 189
+      hex: "#f176bd"
+
+  - name: green
+    lab:
+      l: 69
+      a: -38
+      b: 55
+    rgb:
+      r: 128
+      g: 184
+      b: 60
+      hex: "#80b83c"
+
+  - name: cyan
+    lab:
+      l: 73
+      a: -40
+      b: -4
+    rgb:
+      r: 57
+      g: 199
+      b: 185
+      hex: "#39c7b9"
+
+  - name: blue
+    lab:
+      l: 60
+      a: 0
+      b: -57
+    rgb:
+      r: 0
+      g: 150
+      b: 245
+      hex: "#0096f5"
+
+  - name: yellow
+    lab:
+      l: 75
+      a: 6
+      b: 68
+    rgb:
+      r: 227
+      g: 178
+      b: 48
+      hex: "#e3b230"
+
+  - name: violet
+    lab:
+      l: 64
+      a: 30
+      b: -45
+    rgb:
+      r: 165
+      g: 140
+      b: 236
+      hex: "#a58cec"
+
+
+
