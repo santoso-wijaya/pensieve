@@ -1,6 +1,6 @@
+
 palette: Solarized light
 colors:
-
   - name: base3
     lab:
       l: 97
@@ -11,7 +11,6 @@ colors:
       g: 246
       b: 227
       hex: "#fff6e3"
-
   - name: base2
     lab:
       l: 92
@@ -22,7 +21,6 @@ colors:
       g: 231
       b: 213
       hex: "#f0e7d5"
-
   - name: base1
     lab:
       l: 65
@@ -33,7 +31,6 @@ colors:
       g: 161
       b: 161
       hex: "#92a1a1"
-
   - name: base0
     lab:
       l: 60
@@ -44,7 +41,6 @@ colors:
       g: 148
       b: 150
       hex: "#829496"
-
   - name: base00
     lab:
       l: 50
@@ -55,7 +51,6 @@ colors:
       g: 123
       b: 130
       hex: "#637b82"
-
   - name: base01
     lab:
       l: 45
@@ -66,7 +61,6 @@ colors:
       g: 110
       b: 118
       hex: "#566e76"
-
   - name: base02
     lab:
       l: 20
@@ -77,7 +71,6 @@ colors:
       g: 54
       b: 65
       hex: "#003641"
-
   - name: base03
     lab:
       l: 15
@@ -88,7 +81,6 @@ colors:
       g: 43
       b: 54
       hex: "#002b36"
-
   - name: red
     lab:
       l: 50
@@ -99,7 +91,6 @@ colors:
       g: 51
       b: 46
       hex: "#e0332e"
-
   - name: orange
     lab:
       l: 50
@@ -110,7 +101,6 @@ colors:
       g: 75
       b: 21
       hex: "#cf4b15"
-
   - name: magenta
     lab:
       l: 60
@@ -121,7 +111,6 @@ colors:
       g: 87
       b: 156
       hex: "#f2579c"
-
   - name: green
     lab:
       l: 60
@@ -132,7 +121,6 @@ colors:
       g: 152
       b: 0
       hex: "#8d9800"
-
   - name: cyan
     lab:
       l: 60
@@ -143,7 +131,6 @@ colors:
       g: 161
       b: 152
       hex: "#1fa198"
-
   - name: blue
     lab:
       l: 55
@@ -154,7 +141,6 @@ colors:
       g: 141
       b: 209
       hex: "#008dd1"
-
   - name: yellow
     lab:
       l: 60
@@ -165,7 +151,6 @@ colors:
       g: 136
       b: 1
       hex: "#bb8801"
-
   - name: violet
     lab:
       l: 50
@@ -176,6 +161,4 @@ colors:
       g: 115
       b: 196
       hex: "#5c73c4"
-
-
 

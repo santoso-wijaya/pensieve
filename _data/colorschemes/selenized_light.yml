@@ -1,6 +1,5 @@
 palette: Selenized light
 colors:
-
   - name: bg_0
     lab:
       l: 96
@@ -11,7 +10,6 @@ colors:
       g: 243
       b: 218
       hex: "#fef3da"
-
   - name: bg_1
     lab:
       l: 91
@@ -22,7 +20,6 @@ colors:
       g: 228
       b: 204
       hex: "#f0e4cc"
-
   - name: bg_2
     lab:
       l: 82
@@ -33,7 +30,6 @@ colors:
       g: 203
       b: 180
       hex: "#d6cbb4"
-
   - name: dim_0
     lab:
       l: 62
@@ -44,7 +40,6 @@ colors:
       g: 152
       b: 148
       hex: "#8f9894"
-
   - name: fg_0
     lab:
       l: 42
@@ -55,7 +50,6 @@ colors:
       g: 102
       b: 109
       hex: "#52666d"
-
   - name: fg_1
     lab:
       l: 31
@@ -66,7 +60,6 @@ colors:
       g: 76
       b: 82
       hex: "#384c52"
-
   - name: unused_0
     lab:
       l: 28
@@ -77,7 +70,6 @@ colors:
       g: 73
       b: 86
       hex: "#0e4956"
-
   - name: unused_1
     lab:
       l: 23
@@ -88,7 +80,6 @@ colors:
       g: 61
       b: 72
       hex: "#053d48"
-
   - name: red
     lab:
       l: 46
@@ -99,7 +90,6 @@ colors:
       g: 33
       b: 43
       hex: "#d4212b"
-
   - name: orange
     lab:
       l: 52
@@ -110,7 +100,6 @@ colors:
       g: 93
       b: 32
       hex: "#c75d20"
-
   - name: magenta
     lab:
       l: 52
@@ -121,7 +110,6 @@ colors:
       g: 76
       b: 153
       hex: "#cb4c99"
-
   - name: green
     lab:
       l: 54
@@ -132,7 +120,6 @@ colors:
       g: 145
       b: 0
       hex: "#539100"
-
   - name: cyan
     lab:
       l: 57
@@ -143,7 +130,6 @@ colors:
       g: 156
       b: 143
       hex: "#009c8f"
-
   - name: blue
     lab:
       l: 46
@@ -154,7 +140,6 @@ colors:
       g: 115
       b: 210
       hex: "#0073d2"
-
   - name: yellow
     lab:
       l: 59
@@ -165,17 +150,13 @@ colors:
       g: 136
       b: 0
       hex: "#b38800"
-
   - name: violet
     lab:
       l: 49
       a: 32
-      b: -57
+      b: -47
     rgb:
-      r: 108
-      g: 102
-      b: 214
-      hex: "#6c66d6"
-
-
-
+      r: 125
+      g: 100
+      b: 197
+      hex: "#7d64c5"

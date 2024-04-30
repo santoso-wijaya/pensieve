@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment %}
 Instantiate with a palette source; e.g.:
 
 ```sh
@@ -7,19 +7,18 @@ cargo run -p base16cs-cli -- \
     --template ~/Code/pensieve/_data/colorscheme.yml.liquid \
   > ~/Code/pensieve/_data/colorschemes/selenized_light.yml
 ```
-{% endcomment %}
-
+{%- endcomment %}
 palette: {{ palette.name }}
 colors:
-{% for color in palette.colors %}
+{%- for color in palette.colors %}
   - name: {{ color.base.name }}
     lab:
       l: {{ color.base.lab.l }}
       a: {{ color.base.lab.a }}
       b: {{ color.base.lab.b }}
     rgb:
-      r: {{ color.rgb.r | round }}
-      g: {{ color.rgb.g | round }}
-      b: {{ color.rgb.b | round }}
-      hex: "{{ color.rgb_hex }}"
-{% endfor %}
+      r: {{ color.srgb.red }}
+      g: {{ color.srgb.green }}
+      b: {{ color.srgb.blue }}
+      hex: "#{{ color.srgb_hex }}"
+{%- endfor %}

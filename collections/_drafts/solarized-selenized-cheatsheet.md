@@ -4,8 +4,8 @@ tags: colorscheme cheatsheet solarized selenized
 classes: wide
 ---
 
-Note: Color values here are canonical in CIELAB form. The included RGB values
-were computed with [`color_space`](https://github.com/ChevyRay/color_space).
+Note: Color values here are canonical in CIE L*a*b* form. The included sRGB
+values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
 
 ## Solarized (dark & light)
 
@@ -45,6 +45,8 @@ were computed with [`color_space`](https://github.com/ChevyRay/color_space).
     <tr>
   {% endunless %}
 {% endfor %}
+
+<!-- TODO: render the 8 accent rows -->
 </table>
 
 ## Selenized (dark & light)
