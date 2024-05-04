@@ -40,6 +40,7 @@ colorscheme_pairs:
 
 <style type="text/css">
   table {
+		width: 95%;
     margin: auto;
     border-collapse: collapse;
   }
@@ -67,9 +68,17 @@ colorscheme_pairs:
   td > code {
     background: none;
   }
+
+	tbody td.darkbg > code {
+		color: #c8d7d8;
+	}
+
+	tbody td.lightbg > code {
+		color: #384c52;
+	}
 </style>
 
-Note: Color values here are canonical in CIE L\*a\*b\* form. The included sRGB
+Note: Color values here are canonical in CIE L\*a\*b\* space. The included sRGB
 values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
 
 {%- for colorscheme_pair in page.colorscheme_pairs %}
@@ -105,9 +114,18 @@ values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
     {%- for colorscheme in colorscheme_pair.palettes %}
     {%- assign palette = site.data.colorschemes[colorscheme] %}
     {%- assign color = palette.colors[i] %}
-      <td><code>{{ color.name }}</code></td>
-      <td><code>{{ color.lab.l }} {{ color.lab.a }} {{ color.lab.b }}</code></td>
-      <td><code>{{ color.rgb.hex }}</code></td>
+		{%- if color.lab.l < 70 %}
+		  {%- assign class = "darkbg" %}
+		{%- else %}
+		  {%- assign class = "lightbg" %}
+		{%- endif %}
+      <td bgcolor="{{ color.rgb.hex }}" class="{{ class }}"><code>{{ color.name }}</code></td>
+      <td bgcolor="{{ color.rgb.hex }}" class="{{ class }}">
+				<code>{{ color.lab.l }} {{ color.lab.a }} {{ color.lab.b }}</code>
+			</td>
+      <td bgcolor="{{ color.rgb.hex }}" class="{{ class }}">
+			  <code>{{ color.rgb.hex }}</code>
+			</td>
     {%- endfor %}
     </tr>
   {%- endfor %}
@@ -122,9 +140,16 @@ values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
     {%- for colorscheme in colorscheme_pair.palettes %}
     {%- assign palette = site.data.colorschemes[colorscheme] %}
     {%- assign color = palette.colors[i] %}
-      <td><code>{{ color.name }}</code></td>
-      <td><code>{{ color.lab.l }} {{ color.lab.a }} {{ color.lab.b }}</code></td>
-      <td><code>{{ color.rgb.hex }}</code></td>
+		{%- if color.lab.l < 70 %}
+		  {%- assign class = "darkbg" %}
+		{%- else %}
+		  {%- assign class = "lightbg" %}
+		{%- endif %}
+      <td bgcolor="{{ color.rgb.hex }}"><code>{{ color.name }}</code></td>
+      <td bgcolor="{{ color.rgb.hex }}">
+				<code>{{ color.lab.l }} {{ color.lab.a }} {{ color.lab.b }}</code>
+			</td>
+      <td bgcolor="{{ color.rgb.hex }}"><code>{{ color.rgb.hex }}</code></td>
     {%- endfor %}
     </tr>
   {%- endfor %}
