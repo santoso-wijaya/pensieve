@@ -64,7 +64,7 @@ colorscheme_pairs:
     vertical-align: middle;
     border: 1px solid;
   }
- 
+
   td > code {
     background: none;
   }
@@ -82,6 +82,7 @@ Note: Color values here are canonical in CIE L\*a\*b\* space. The included sRGB
 values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
 
 {%- for colorscheme_pair in page.colorscheme_pairs %}
+
 ## {{ colorscheme_pair.title }}
 
 <table>
@@ -160,8 +161,7 @@ values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
 
 {%- endfor %}
 
-
 ## Credits
 
-*   [Solarized - Ethan Schoonover](https://ethanschoonover.com/solarized/)
-*   [Selenized - Jan Warchol](https://github.com/jan-warchol/selenized)
+* [Solarized - Ethan Schoonover](https://ethanschoonover.com/solarized/)
+* [Selenized - Jan Warchol](https://github.com/jan-warchol/selenized)
