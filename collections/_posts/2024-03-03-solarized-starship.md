@@ -16,7 +16,7 @@ prompt with tons of customization options.
 Installation is easy with Homebrew.
 
 ```sh
-$ brew install starship
+brew install starship
 ```
 
 ## Installing Nerd Fonts
@@ -27,8 +27,8 @@ Installing an NF-patched Meslo font, for instance, can be done easily on a Mac
 OS with Homebrew.
 
 ```sh
-$ brew tap homebrew/cask-fonts
-$ brew install --cask font-meslo-lg-nerd-font
+brew tap homebrew/cask-fonts
+brew install --cask font-meslo-lg-nerd-font
 ```
 
 Then, we need to use that font in our Terminal or VSCode apps. For Terminal.app,
@@ -50,7 +50,7 @@ I really like the
 preset as a base.
 
 ```sh
-$ starship preset gruvbox-rainbow -o ~/.config/starship.toml
+starship preset gruvbox-rainbow -o ~/.config/starship.toml
 ```
 
 But I want to *Solarize* it. So I tweaked its palette, and ended up with this

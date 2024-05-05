@@ -79,8 +79,10 @@ colorscheme_pairs:
   }
 </style>
 
-Note: Color values here are canonical in CIE L\*a\*b\* space. The included sRGB
-values were computed with [`palettte`](https://docs.rs/palette/latest/palette/).
+Note: Color values here are canonical in CIE L\*a\*b\* colorspace. The included
+sRGB values were computed with
+[`palettte`](https://docs.rs/palette/latest/palette/).
+{: .notice--info}
 
 {%- for colorscheme_pair in page.colorscheme_pairs %}
 

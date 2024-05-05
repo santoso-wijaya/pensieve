@@ -17,12 +17,12 @@ while now, ever since college.
 Lately, I have been curious to try NeoVim and its more powerful features. I am
 hoping to power up my homekey usage.
 
-# Installing NeoVim
+## Installing NeoVim
 
 On Mac OS, with Homebrew, that's trivial.
 
 ```sh
-$ brew install neovim
+brew install neovim
 ```
 
 My muscle memory compels me to type `vim` and `view` when opening text files.
@@ -42,7 +42,7 @@ if which nvim >/dev/null; then
 fi
 ```
 
-## User Config
+### User Config
 
 Vim reads from `~/.vimrc` and its plugin, etc lives in `~/.vim/`, while
 NeoVim canonically reads its vimrc file from `~/.config/nvim/init.vim` (or
@@ -56,9 +56,9 @@ More to the point: I want my Vim and NeoVim installations to share the same
 config file.
 
 ```sh
-$ mkdir ~/.vim/
-$ ln -s ../.vim ~/.config/nvim  # this redirects nvim's config dir to vim's
-$ ln -s $HOME/.vimrc ~/.vim/init.vim    # redirects init.vim to ~/.vimrc
+mkdir ~/.vim/
+ln -s ../.vim ~/.config/nvim  # this redirects nvim's config dir to vim's
+ln -s $HOME/.vimrc ~/.vim/init.vim    # redirects init.vim to ~/.vimrc
 ```
 
 The vimrc file `~/.vimrc` now becomes our master vimrc file. It should work
@@ -153,7 +153,7 @@ set backupdir=.backup/,~/.backup/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
 {% endhighlight %}
 
-# Next: Mastering LSPs
+## Next: Mastering LSPs
 
 For quick edits and one-offs, Vim is great. It lets me live and stay in the
 Terminal without too much context switching. For more extensive coding, though,

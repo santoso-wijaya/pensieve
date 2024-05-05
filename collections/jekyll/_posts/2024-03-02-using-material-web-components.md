@@ -46,10 +46,10 @@ working directory.
 TIP: To install version-specific Node and NPM with the Node version manager `n`:
 
 ```sh
-$ apt install npm
-$ node --version
-$ npm install -g n
-$ n 18.17.1 && node --version
+apt install npm
+node --version
+npm install -g n
+n 18.17.1 && node --version
 ```
 
 ## JavaScript: import components
@@ -107,7 +107,9 @@ need to add the following in this site's `main.scss` file.
 /*--- end material web customizations ---*/
 ```
 
-NOTE: To make Roboto available, I also need to add the fonts in `<head>`.
+Note: To make Roboto available, I also need to add the fonts in `<head>`.
+{: .notice--primary}
+
 ```yaml
 head_scripts:
 - https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap

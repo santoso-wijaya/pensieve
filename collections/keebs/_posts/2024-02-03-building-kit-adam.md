@@ -111,7 +111,7 @@ I spent the day building Kit Adam today. 楽しかったよ。
 
 {% assign assets_base = "assets/keebs/kit-adams/" %}
 
-#### Unboxing...
+#### Unboxing
 
 {% responsive_image_block %}
   path: {{ assets_base | append: "unboxing.jpeg" }}
@@ -135,7 +135,7 @@ I spent the day building Kit Adam today. 楽しかったよ。
 {% include gallery id="gallery-pcb" class="full" caption="The アダム PCB." %}
 
 {% comment %}
-  See: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+  See: <https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/>
 {% endcomment %}
 
 #### *Stabby stabby*
@@ -167,6 +167,6 @@ Next: keycaps. I chose a Matcha themed set with *kana* sub legends.
 
 あとは keycaps の問題なんだ。「Matcha」のデサインを選んだ。
 
-#### All done!
+#### All done
 
 {% include gallery id="gallery-done" class="full" %}

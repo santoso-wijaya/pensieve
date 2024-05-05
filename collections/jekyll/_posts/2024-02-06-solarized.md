@@ -30,7 +30,7 @@ puts Person.all.inspect
 
 Here's what I did to make this happen.
 
-1.  Locate the current Jekyll theme's css folder, and copy over
+1. Locate the current Jekyll theme's css folder, and copy over
     `assets/css/main.scss` file from there.
 
     ```sh
@@ -39,7 +39,7 @@ Here's what I did to make this happen.
         cp {}/assets/css/main.scss ./assets/css/main.scss
     ```
 
-1.  Edit the copy and add the color overrides before any of the import
+1. Edit the copy and add the color overrides before any of the import
     statements there.
 
     ```scss
@@ -105,13 +105,13 @@ Here's what I did to make this happen.
 
 ## Research notes
 
-*   [Syntax highlighting](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#syntax-highlighting)
+* [Syntax highlighting](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#syntax-highlighting)
 in Minimal Mistakes' documentation.
-*   [L\*a\*b values](https://github.com/altercation/solarized/tree/master/vim-colors-solarized#the-values)
+* [L\*a\*b values](https://github.com/altercation/solarized/tree/master/vim-colors-solarized#the-values)
     mapping Solarized color names to their hex values and TERMCOL names.
-*   [Styling Guidelines](https://github.com/chriskempson/base16/blob/main/styling.md#styling-guidelines)
+* [Styling Guidelines](https://github.com/chriskempson/base16/blob/main/styling.md#styling-guidelines)
     for typical uses of colors 0-16.
-*   [`minimal-mistakes/_sass/minimal-mistakes/_syntax.css`](https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_sass/minimal-mistakes/_syntax.scss)
+* [`minimal-mistakes/_sass/minimal-mistakes/_syntax.css`](https://github.com/mmistakes/minimal-mistakes/blob/8a67ce8e41ec850f2d7c373aa47739b2abfee6f1/_sass/minimal-mistakes/_syntax.scss)
 
 {% responsive_image_block %}
   path: "assets/solarized/colorscheme.png"

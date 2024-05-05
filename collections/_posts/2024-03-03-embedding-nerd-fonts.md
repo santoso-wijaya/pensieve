@@ -34,7 +34,7 @@ distribution packages on the web. For this project, I need to download the
 patched `.ttf`, compress it into `.woff2`, include it in this site, and define a
 CSS font family out of it.
 
-# Install Monaspace Nerd Fonts
+## Install Monaspace Nerd Fonts
 
 TIP: [Monaspace](https://monaspace.githubnext.com) (by GitHub) looks gorgeous!
 The whole set is pleasant to behold and I appreciate the coding-specific and
@@ -44,13 +44,13 @@ too, wherever I can.
 First, we install the NF-patched fonts set (along with the original).
 
 ```sh
-$ brew install --cask font-monaspace-nerd-font font-monaspace
+brew install --cask font-monaspace-nerd-font font-monaspace
 ```
 
 We can then convert the downloaded OTF (OpenType Fonts) files into WOFF
 (Web Fonts) files.
 
-# Define a new web font family
+## Define a new web font family
 
 In our SCSS file:
 
@@ -80,7 +80,7 @@ pre {
 }
 ```
 
-# Using NF with CSS classes
+## Using NF with CSS classes
 
 We can also render NF glyphs using CSS class names. See:
 [Nerd Fonts Cheat Sheet](https://www.nerdfonts.com/cheat-sheet)
@@ -89,11 +89,10 @@ We can also render NF glyphs using CSS class names. See:
 @import "https://www.nerdfonts.com/assets/css/webfont.css"
 
 I really <i class="nf nf-fa-heart"></i>
-         <i class="nf nf-custom-vim">im</i>
+         <i class="nf nf-custom-vim">im</i> &
          <i class="nf nf-custom-neovim">vim</i>
 ```
 
-<center>
-I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim">im</i>
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim">im</i> &
          <i class="nf nf-custom-neovim">vim</i>
-</center>
+{: .text-center}
