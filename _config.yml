@@ -174,3 +174,9 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-P5CEB991C4"
+
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "santosos-pensieve"
