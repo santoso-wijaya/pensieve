@@ -60,7 +60,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/cygnoid9"
 
-# Archive Settings
+# Archive settings
 # See: https://mmistakes.github.io/minimal-mistakes/docs/configuration/#archive-settings
 category_archive:
   type: jekyll-archives
@@ -79,7 +79,7 @@ jekyll-archives:
     category: /categories/:name/ # e.g. pensieve.swijaya.me/categories/keebs/
     tag: /tags/:name/
 
-# Configure our Jekyll Collections structure.
+# Configure our Jekyll Collections structure
 collections_dir: collections
 collections:
   # for /collections/<category>/<sub_category>/_posts/yyyy-mm-dd-title.md
@@ -93,7 +93,7 @@ collections:
     output: true
     permalink: /:collection/:path
 
-# Front Matter Defaults.
+# Front Matter defaults
 defaults:
   # _posts
   - scope:
@@ -169,3 +169,8 @@ badges:
   disable_in_development: false
   template: _includes/badges.html
 
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-P5CEB991C4"
