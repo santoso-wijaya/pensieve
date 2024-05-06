@@ -1,0 +1,15 @@
+/* See: https://github.com/mmistakes/minimal-mistakes/blob/70462d0e166ba9d8de3a0344c356a4fd88ef2546/_sass/minimal-mistakes/_buttons.scss#L32-L62 */
+
+$threads-color: #000;
+
+.btn--threads {
+  @include yiq-contrasted($threads-color);
+
+  &:visited {
+    @include yiq-contrasted($threads-color);
+  }
+
+  &:hover {
+    @include yiq-contrasted(mix(#000, $threads-color, 20%));
+  }
+}
