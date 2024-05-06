@@ -3,6 +3,7 @@ title: Solarized & Selenized Colorscheme Cheatsheet
 tags: colorscheme cheatsheet solarized selenized
 classes: wide
 comments: true
+share: true
 bases:
   - base00
   - base01

@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   my thoughts and ramblings.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pensieve.swijaya.me" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  santoso-wijaya
+github_username: santoso-wijaya
 repository: "santoso-wijaya/pensieve"
 #logo: "/assets/logo/pensieve-88x88.png" # Site masthead logo
 
@@ -73,7 +73,7 @@ jekyll-archives:
     - categories
     - tags
   layouts:
-    category: archive-taxonomy  # provided by Minimal Mistakes
+    category: archive-taxonomy # provided by Minimal Mistakes
     tag: archive-taxonomy # see: _layouts folder in minimal-mistakes-jekyll gem
   permalinks:
     category: /categories/:name/ # e.g. pensieve.swijaya.me/categories/keebs/
@@ -104,7 +104,7 @@ defaults:
       author_profile: true
       show_date: true
       read_time: true # the default word/minute value is 200
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -141,7 +141,6 @@ exclude:
   # Note: dotfiles are already excluded by default.
   - README.md
 
-
 # jekyll-responsive-image configs
 responsive_image:
   template: _includes/responsive-image.html
@@ -163,18 +162,15 @@ responsive_image:
   extra_images:
     - assets/avatars/*.{jpeg,jpg}
 
-
 # jekyll-badges configs
 badges:
   disable_in_development: false
   template: _includes/badges.html
 
-
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-P5CEB991C4"
-
 
 comments:
   provider: "disqus"
