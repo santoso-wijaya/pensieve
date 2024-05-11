@@ -4,6 +4,7 @@ tags: colorscheme cheatsheet solarized selenized
 classes: wide
 comments: true
 share: true
+
 bases:
   - base00
   - base01
@@ -80,9 +81,18 @@ colorscheme_pairs:
   }
 </style>
 
+[Solarized](https://ethanschoonover.com/solarized/) is a sixteen color palette
+(eight monotones, eight accent colors) designed by Ethan Schoonover.
+
+[Selenized](https://github.com/jan-warchol/selenized) is a redesign on Solarized
+by Jan Warchoł. It improves on Solarized by providing better contrast and more
+distinguishable accent colors.
+
 Note: Color values here are canonical in CIE L\*a\*b\* colorspace. The included
 sRGB values were computed with
-[`palettte`](https://docs.rs/palette/latest/palette/).
+[`base16cs`](https://github.com/santoso-wijaya/base16cs) Rust tool that I
+developed. It uses [`palettte`](https://docs.rs/palette/latest/palette/) for
+colorspace computation.
 {: .notice--info}
 
 {%- for colorscheme_pair in page.colorscheme_pairs %}
